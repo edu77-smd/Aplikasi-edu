@@ -1,0 +1,462 @@
+<!-- TOOLKIT GRATIS GURU SMK-TKJ | GOOGLE SITES EMBED -->
+<style>
+:root{--b:#0284c7;--bd:#075985;--bs:#e0f2fe;--i:#0f172a;--m:#64748b;--l:#e2e8f0;--bg:#f8fafc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--i);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
+button,input,select{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.top{position:sticky;top:0;z-index:20;background:linear-gradient(110deg,#0f172a,#075985,#172554);color:#fff;box-shadow:0 4px 18px #0002}
+.wrap{max-width:1120px;margin:auto;padding:0 16px}.header{padding:18px 0}.brand{display:flex;gap:12px;align-items:center}
+.logo{width:48px;height:48px;border-radius:14px;background:#ffffff1f;display:grid;place-items:center;font-size:24px;border:1px solid #ffffff2e}
+h1{font-size:20px;margin:0 0 4px;font-weight:800}.subtitle{font-size:12px;color:#cbd5e1}
+.badge{display:inline-block;background:#10b98129;color:#a7f3d0;border:1px solid #10b9814d;border-radius:999px;padding:4px 9px;font-size:10px;font-weight:800;margin-bottom:5px}
+main{padding:22px 0 42px}.hero{background:#fff;border:1px solid var(--l);border-radius:20px;padding:20px;box-shadow:0 8px 24px #0f172a14;margin-bottom:16px}
+.hero h2{margin:0 0 7px;font-size:18px}.hero p{margin:0;color:var(--m);font-size:13px;line-height:1.65}
+.guide{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:16px}.step{background:#f8fafc;border:1px solid var(--l);border-radius:12px;padding:10px;font-size:11px;color:#475569}.step b{display:block;color:#0f172a;margin-bottom:3px}
+.controls{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:10px;margin-bottom:12px}.search,.select{width:100%;border:1px solid var(--l);background:#fff;border-radius:13px;padding:12px 13px;outline:none;color:var(--i)}
+.search:focus,.select:focus{border-color:var(--b);box-shadow:0 0 0 3px #0284c71f}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.btn{border:1px solid var(--l);background:#fff;border-radius:11px;padding:9px 12px;font-size:12px;font-weight:700;color:#334155}.btn:hover{background:#f1f5f9}.btn.primary{background:var(--b);border-color:var(--b);color:#fff}
+.count{margin-left:auto;background:#fff;border:1px solid var(--l);border-radius:11px;padding:9px 12px;font-size:12px;font-weight:700;color:#64748b}
+.module{background:#fff;border:1px solid var(--l);border-radius:18px;overflow:hidden;margin-bottom:12px;box-shadow:0 3px 12px #0f172a0a}.module-head{width:100%;border:0;background:#fff;padding:15px;display:flex;align-items:center;gap:12px;text-align:left}
+.module-head:hover{background:#f8fafc}.module-icon{width:42px;height:42px;border-radius:12px;background:var(--bs);color:var(--bd);display:grid;place-items:center;font-weight:900;flex:0 0 auto}
+.module-info{min-width:0;flex:1}.tag{font-size:10px;color:var(--b);font-weight:900;letter-spacing:.04em}.module-title{font-size:14px;font-weight:800;margin:3px 0}.module-desc{font-size:11px;color:var(--m);line-height:1.45}
+.chevron{font-size:18px;color:#94a3b8;transition:.2s}.module.open .chevron{transform:rotate(180deg)}.module-body{display:none;border-top:1px solid var(--l);padding:12px}.module.open .module-body{display:block}
+.prompts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.prompt{border:1px solid var(--l);border-radius:14px;padding:13px;background:#fff}.prompt:hover{border-color:#bae6fd;box-shadow:0 7px 18px #0f172a0f}
+.prompt-top{display:flex;justify-content:space-between;gap:8px;margin-bottom:7px}.num{background:#f1f5f9;border-radius:7px;padding:4px 7px;font-size:10px;font-weight:800;color:#64748b}.ptype{font-size:10px;color:#94a3b8}
+.prompt h3{font-size:13px;margin:0 0 5px}.desc{font-size:11px;color:var(--m);line-height:1.5;margin:0 0 10px}.prompt-text{background:#f8fafc;border:1px solid var(--l);border-radius:10px;padding:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;line-height:1.55;color:#334155;max-height:145px;overflow:auto;user-select:text}
+.copy{width:100%;margin-top:9px;border:1px solid #bae6fd;background:#f0f9ff;color:#0369a1;border-radius:10px;padding:10px;font-size:11px;font-weight:800}.copy:hover{background:var(--b);color:#fff;border-color:var(--b)}
+.empty{background:#fff;border:1px solid var(--l);border-radius:18px;padding:45px 20px;text-align:center;color:var(--m)}.toast{position:fixed;right:16px;bottom:18px;background:#0f172a;color:#fff;border-radius:13px;padding:12px 14px;box-shadow:0 10px 30px #0004;font-size:12px;z-index:50;opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}.toast.show{opacity:1;transform:none}
+footer{background:#0f172a;color:#94a3b8;text-align:center;padding:24px 16px;font-size:11px}
+@media(max-width:760px){.controls{grid-template-columns:1fr}.guide{grid-template-columns:1fr 1fr}.prompts{grid-template-columns:1fr}.count{margin-left:0}.btn{flex:1}.module-head{padding:13px}.module-title{font-size:13px}}
+@media(max-width:420px){.guide{grid-template-columns:1fr}.logo{width:42px;height:42px}h1{font-size:17px}}
+</style>
+
+<div id="google-sites-toolkit">
+<header class="top"><div class="wrap header"><div class="brand"><div class="logo">⌘</div><div><div class="badge">100 PROMPT AI GRATIS</div><h1>Toolkit Gratis Guru SMK–TKJ</h1><div class="subtitle">100 prompt siap pakai untuk pembelajaran, praktik, asesmen, media, proyek, dan administrasi guru.</div></div></div></div></header>
+<main><div class="wrap">
+<section class="hero"><h2>Toolkit AI untuk Guru SMK–TKJ</h2><p>Pilih modul, buka dropdown, sesuaikan bagian dalam tanda <b>[kurung]</b>, lalu salin prompt ke AI pilihan Anda. Gunakan hasil AI sebagai bahan bantu dan tetap lakukan pemeriksaan sebelum diterapkan.</p>
+<div class="guide"><div class="step"><b>1. Pilih Modul</b>Gunakan dropdown modul.</div><div class="step"><b>2. Buka Prompt</b>Klik judul modul.</div><div class="step"><b>3. Sesuaikan</b>Ganti bagian [kurung].</div><div class="step"><b>4. Salin</b>Klik Salin Prompt.</div><div class="step"><b>5. Gunakan</b>Periksa hasil AI.</div></div></section>
+<section class="controls"><input id="search" class="search" type="search" placeholder="Cari prompt: Mikrotik, VLAN, RPP, jobsheet..." autocomplete="off"><select id="moduleSelect" class="select" aria-label="Pilih modul"><option value="all">Semua Modul (100 Prompt)</option></select></section>
+<div class="actions"><button class="btn primary" type="button" id="openAll">⌄ Buka Semua</button><button class="btn" type="button" id="closeAll">⌃ Tutup Semua</button><button class="btn" type="button" id="reset">↺ Reset</button><span class="count" id="count">100 Prompt</span></div>
+<section id="modules"></section>
+</div></main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<footer><b>TOOLKIT GRATIS GURU SMK–TKJ © 2026</b><br>Kumpulan 100 Prompt Efektif Pengembang Media Pembelajaran & Administrasi Guru TJKT Se-Indonesia.</footer>
+<script>
+const toolkitData = [
+            {
+                id: "modul-01",
+                freeTag: "FREE #01",
+                title: "AI Untuk Guru TKJ (Eksplorasi Konsep)",
+                icon: "fa-solid fa-microchip",
+                description: "Dasar-dasar eksplorasi pembelajaran TKJ, analogi jaringan, dan skenario troubleshooting awal.",
+                prompts: [
+                    { id: 1, name: "Analogi Sederhana Konsep Jaringan", desc: "Menjelaskan konsep teknis yang rumit menjadi analogi kehidupan sehari-hari.", template: "Bertindaklah sebagai Ahli Jaringan Komputer dan Edukator SMK. Buatkan 3 analogi sederhana dari dunia nyata untuk menjelaskan konsep [Konsep TKJ, misal: Subnetting / Model OSI / Router vs Switch] agar siswa SMK TKJ kelas X dapat memahaminya dengan cepat dan mudah." },
+                    { id: 2, name: "Skenario Problem-Solving Jaringan", desc: "Membuat studi kasus eror jaringan untuk melatih analisis troubleshooting.", template: "Buatkan 1 studi kasus masalah jaringan lokal (LAN) di mana [Skenario Masalah, misal: Komputer klien tidak bisa terkoneksi ke server lokal padahal IP sudah statis]. Berikan deskripsi gejala, langkah pengujian command prompt (ping/tracert), dan solusi pemecahannya secara runtut." },
+                    { id: 3, name: "Penyusun Rangkuman Modul Mikrotik", desc: "Meringkas materi panjang Mikrotik RouterOS menjadi poin kunci.", template: "Rangkum materi tentang [Materi Mikrotik, misal: Basic Router Configuration / Firewall Filter Rules] menjadi 5 poin utama yang berfokus pada perintah praktis di Winbox/Terminal dan fungsinya dalam jaringan produksi." },
+                    { id: 4, name: "Penyusun Istilah Teknis (Glosarium)", desc: "Membuat daftar glosarium istilah TKJ beserta definisi praktis.", template: "Buatkan glosarium istilah teknis untuk topik [Topik TKJ, misal: Administrasi Infrastruktur Jaringan] berisi 10 istilah penting. Sertakan istilah teknis, kepanjangan, definisi ringkas, dan contoh penerapannya dalam praktikum." },
+                    { id: 5, name: "Rancangan Studi Kasus Keamanan Siber", desc: "Studi kasus keamanan jaringan untuk siswa kelas XI/XII.", template: "Buatkan skenario studi kasus serangan keamanan jaringan ringan (misal: [Jenis Serangan, misal: MAC Flooding / Rogue DHCP / Wi-Fi Deauth]). Jelaskan kronologi kejadian, dampaknya pada jaringan sekolah, serta langkah pencegahannya." },
+                    { id: 6, name: "Panduan Memilih Hardware Lab", desc: "Analisis kebutuhan perangkat lunak dan keras untuk praktikum.", template: "Rekomendasikan spesifikasi minimal PC Router dan Switch yang ideal untuk praktikum [Topik Praktikum, misal: Manajemen Bandwidth & Routing OSPF] di SMK TKJ dengan anggaran terjangkau. Berikan alasan teknisnya." },
+                    { id: 7, name: "Latihan Command Line Interface (CLI)", desc: "Daftar perintah CLI dasar beserta penjelasan fungsionalnya.", template: "Buat panduan cheat-sheet CLI untuk [Sistem Operasi/Perangkat, misal: Cisco IOS / Linux Debian 12 / Mikrotik CLI] yang berisi 10 perintah vital paling sering digunakan teknisi jaringan beserta fungsi dan sintaksnya." },
+                    { id: 8, name: "Pemicu Diskusi Reflektif TKJ", desc: "Pertanyaan diskusi kritis terkait perkembangan teknologi IT.", template: "Buat 3 pertanyaan diskusi interaktif dan memicu berpikir kritis (HOTS) untuk siswa TKJ mengenai topik [Topik, misal: Implikasi Migrasi IPv4 ke IPv6 / Penggunaan Cloud vs On-Premise Server]." },
+                    { id: 9, name: "Skenario Pelayanan Pelanggan (Teknisi ISP)", desc: "Simulasi interaksi teknisi lapangan dengan konsumen.", template: "Buat naskah simulasi percakapan antara Teknisi Support ISP dan Pelanggan yang mengalami masalah [Kendala, misal: Koneksi Internet Lambat dan Lampu PON Router Berkedip Merah]. Sertakan tata cara komunikasi profesional." },
+                    { id: 10, name: "Ide Proyek Mini Jaringan Sekolah", desc: "Gagasan proyek mini yang bisa dikerjakan siswa secara berkelompok.", template: "Berikan 3 ide proyek mini jaringan yang realistis untuk dikerjakan tim siswa SMK TKJ dalam kurun waktu 1 minggu menggunakan alat [Alat, misal: Routerboard Mikrotik & Access Point TP-Link]. Berikan target outputnya." }
+                ]
+            },
+            {
+                id: "modul-02",
+                freeTag: "FREE #02",
+                title: "AI Materi Pembelajaran (Bahan Ajar)",
+                icon: "fa-solid fa-book-open",
+                description: "Menyusun bahan ajar, modul rangkuman, dan penjelasan konsep mendalam.",
+                prompts: [
+                    { id: 11, name: "Modul Ringkas Subnetting VLSM", desc: "Membuat materi langkah demi langkah perhitungan IP.", template: "Buat materi pembelajaran terstruktur mengenai [Topik Subnetting, misal: Variable Length Subnet Masking (VLSM)]. Sertakan rumus, langkah perhitungan bertahap, dan 1 contoh soal lengkap beserta langkah penyelesaiannya secara mendetail." },
+                    { id: 12, name: "Penjelasan Protokol Jaringan (OSI Layer)", desc: "Penjelasan cara kerja protokol dari layer 1 hingga 7.", template: "Jelaskan alur perjalanan paket data dari layer Application hingga Physical berdasarkan model OSI Layer saat seorang pengguna membuka halaman [Aktivitas, misal: Website HTTPS di Browser]. Sertakan fungsi tiap layer." },
+                    { id: 13, name: "Bahan Ajar Layanan Server (Linux Debian)", desc: "Modul teks konfigurasi layanan server berbasis Linux.", template: "Buat bahan ajar praktis untuk konfigurasi [Layanan Server, misal: DHCP Server & DNS Server di Debian 12]. Tuliskan struktur file konfigurasi, perintah eksekusi, serta langkah pengujian dari sisi client Windows." },
+                    { id: 14, name: "Materi Teknologi Jaringan Nirkabel (WLAN)", desc: "Bahan ajar mengenai standar Wi-Fi, frekuensi, dan interferensi.", template: "Susun materi singkat mengenai [Topik Wireless, misal: Perbandingan Frekuensi 2.4 GHz vs 5 GHz dan Masalah Interferensi Sinyal Wi-Fi]. Buat dalam bentuk poin-poin yang cocok untuk slide presentasi atau handout siswa." },
+                    { id: 15, name: "Panduan Praktis Fiber Optik (FO)", desc: "Materi dasar media transmisi kabel FO dan penyambungan.", template: "Buat panduan materi dasar Fiber Optik yang mencakup: Jenis kabel FO (Single-mode vs Multi-mode), fungsi alat (Fusion Splicer, OTDR, OPM, Cleaver), dan prosedur K3 saat menyambung core optik." },
+                    { id: 16, name: "Modul Konsep Routing Dinamis", desc: "Materi perbedaan Routing Statis vs OSPF vs BGP.", template: "Buatkan materi perbandingan mendalam antara [Jenis Routing, misal: Static Routing vs OSPF Routing]. Jelaskan kelebihan, kekurangan, kriteria penggunaan, dan mekanisme update tabel routing masing-masing." },
+                    { id: 17, name: "Penjelasan Teknologi Cloud Computing", desc: "Penyusunan modul pengenalan IaaS, PaaS, dan SaaS.", template: "Susun materi pengenalan Cloud Computing untuk tingkat SMK TKJ. Jelaskan perbedaan model layanan IaaS, PaaS, dan SaaS menggunakan contoh layanan populer yang sering digunakan industri saat ini." },
+                    { id: 18, name: "Panduan Troubleshooting Hardware PC", desc: "Materi pendeteksian kerusakan RAM, Mobo, PSU via beep code.", template: "Buatkan panduan identifikasi kerusakan hardware PC berdasarkan [Gejala, misal: Kode Beep Award/AMI BIOS dan Tampilan Black Screen]. Sertakan langkah perbaikan awal secara sistematis." },
+                    { id: 19, name: "Materi Sistem Keamanan Firewall Mikrotik", desc: "Penjelasan rantai (chain) input, forward, output.", template: "Jelaskan konsep dasar Firewall Filter Rules Mikrotik (Chain Input, Forward, Output, serta Action Accept, Drop, Reject) dengan bahasa yang intuitif untuk siswa SMK kelas XI." },
+                    { id: 20, name: "Handout Konfigurasi VLAN & Trunking", desc: "Ringkasan konsep VLAN ID, Access Port, dan Trunk Port.", template: "Buatkan handout ringkas berisi konsep VLAN, perbedaan Access Port vs Trunk Port (802.1Q), dan fungsi Inter-VLAN Routing pada Switch Layer 3 / Router." }
+                ]
+            },
+            {
+                id: "modul-03",
+                freeTag: "FREE #03",
+                title: "AI Jobsheet Praktik (LKPD Lab)",
+                icon: "fa-solid fa-list-check",
+                description: "Menyusun instruksi praktikum, skema topologi, dan laporan praktikum.",
+                prompts: [
+                    { id: 21, name: "Jobsheet Krimping Kabel UTP (Straight/Cross)", desc: "Panduan praktik pembuatan kabel jaringan UTP RJ-45.", template: "Buatkan Lembar Kerja Siswa / Jobsheet Praktikum untuk [Judul Praktik: Pembuatan Kabel UTP Straight dan Cross]. Format harus mencakup: Tujuan, Alat & Bahan, Standar Urutan Warna T568A/T568B, Langkah Kerja Safety, dan Lembar Pengujian Cable Tester." },
+                    { id: 22, name: "Jobsheet Konfigurasi Router Mikrotik Dasar", desc: "Instruksi langkah demi langkah setup internet gateway.", template: "Buatkan Jobsheet Praktik Mikrotik: [Topik: Konfigurasi Internet Gateway & DHCP Server]. Tentukan topologi sederhana (ISP -> Routerboard -> Client), batasan IP, dan checklist keberhasilan praktikum." },
+                    { id: 23, name: "Jobsheet Instalasi Server VoIP Asterisk", desc: "Panduan praktik server komunikasi suara via IP.", template: "Susun Jobsheet Praktikum Instalasi & Konfigurasi VoIP Server menggunakan [Software, misal: Asterisk / Briker / Elastix] dan Softphone (Zoiper) di PC/Virtual Box. Lengkapi dengan skenario dial-plan 2 extension." },
+                    { id: 24, name: "Jobsheet Setup Access Point & Hotspot Mikrotik", desc: "Instruksi konfigurasi captive portal dan user manager.", template: "Buatkan Jobsheet Praktik [Topik: Layanan Hotspot Mikrotik & User Manager]. Cantumkan panduan pembuatan profil user, pembatasan kecepatan (bandwidth limit), dan kustomisasi halaman login sederhana." },
+                    { id: 25, name: "Jobsheet Penyambungan Fiber Optik (Splicing)", desc: "Langkah kerja penggunaan Fusion Splicer.", template: "Buat Jobsheet Praktikum Penyambungan Fiber Optik menggunakan Fusion Splicer. Tekankan langkah keselamatan kerja (K3), pengupasan cladding, cleaving, proses splicing, dan pengukuran redaman dengan OPM." },
+                    { id: 26, name: "Jobsheet VLAN pada Switch Managed", desc: "Skema dan instruksi pemisahan trafik jaringan VLAN.", template: "Buatkan Jobsheet Praktikum Konfigurasi VLAN pada [Perangkat, misal: Switch Managed Cisco / Mikrotik CRS]. Sertakan alokasi Port untuk VLAN 10 (Siswa) dan VLAN 20 (Guru) serta perintah verifikasinya." },
+                    { id: 27, name: "Jobsheet Virtualisasi Proxmox / VirtualBox", desc: "Panduan praktik pembuatan Virtual Machine (VM).", template: "Susun Jobsheet Praktik Virtualisasi Server menggunakan [Aplikasi, misal: Proxmox VE / Oracle VirtualBox]. Pandu siswa membuat VM Linux, alokasi resource RAM/Disk, dan setting Adapter Jaringan (NAT/Bridged)." },
+                    { id: 28, name: "Jobsheet Troubleshooting Jaringan LAN", desc: "Skenario error buatan yang harus diatasi siswa.", template: "Buatkan Jobsheet Praktik Troubleshooting Jaringan di mana guru secara sengaja mengacak konfigurasi [Konfigurasi, misal: IP Subnet Mask & Default Gateway]. Tuliskan tugas siswa untuk melacak dan membedah masalah." },
+                    { id: 29, name: "Jobsheet Management Bandwidth (Simple Queue)", desc: "Langkah pembatasan kecepatan download/upload.", template: "Buatkan Jobsheet Praktikum Mikrotik: Pembatasan Bandwidth Jaringan menggunakan metode Simple Queue dan Queue Tree berdasarkan alokasi waktu/IP Client." },
+                    { id: 30, name: "Jobsheet Instalasi & Pengujian Web Server Apache", desc: "Praktik setup HTTP server di Debian Linux.", template: "Buat Jobsheet Praktik Instalasi Web Server Apache2 & PHP di Linux Debian. Sertakan langkah pembuatan file index.html kustom dan pengujian akses via browser client." }
+                ]
+            },
+            {
+                id: "modul-04",
+                freeTag: "FREE #04",
+                title: "AI Soal & Asesmen (Evaluasi)",
+                icon: "fa-solid fa-file-pen",
+                description: "Menyusun soal pilihan ganda, essay HOTS, kuis singkat, dan kunci jawaban.",
+                prompts: [
+                    { id: 31, name: "Soal Pilihan Ganda Subnetting & IP Address", desc: "10 Soal pilihan ganda beserta pembahasannya.", template: "Buatkan 5 soal pilihan ganda (5 opsi A-E) tingkat kesulitan sedang hingga HOTS untuk materi [Materi, misal: Perhitungan Subnetting IPv4 & Classless Inter-Domain Routing (CIDR)]. Lengkapi dengan kunci jawaban dan pembahasan rinci." },
+                    { id: 32, name: "Soal Essay HOTS Troubleshooting Server", desc: "Pertanyaan essay berorientasi pemecahan masalah nyata.", template: "Buatkan 3 soal essay berstandar HOTS tentang analisis masalah [Topik, misal: Web Server Tidak Bisa Diakses dari Luar Jaringan Lokal]. Berikan pula kunci jawaban dan indikator kedalaman jawaban siswa." },
+                    { id: 33, name: "Kuis Ringkas Pre-Test Praktikum Mikrotik", desc: "Soal cepat 5 menit sebelum masuk lab komputer.", template: "Buat 5 pertanyaan kuis singkat (Benar/Salah atau Isian Singkat) untuk menguji kesiapan siswa sebelum praktikum [Topik Praktikum, misal: Firewall Mangle & Load Balancing]." },
+                    { id: 34, name: "Bank Soal Asesmen Sumatif Akhir Semester", desc: "Paket soal komprehensif Administrasi Infrastruktur Jaringan.", template: "Buatkan Paket Soal Asesmen Sumatif (10 Pilihan Ganda & 2 Essay) untuk mata pelajaran Produktif TKJ kelas XI topik [Materi, misal: Routing Statis dan Dinamis]. Sertakan kisi-kisi soalnya." },
+                    { id: 35, name: "Soal Analisis Topologi Jaringan", desc: "Menganalisis gambar/deskripsi topologi yang efisien.", template: "Buat 1 soal studi analisis berdasarkan deskripsi topologi jaringan kantor 3 lantai berikut: [Deskripsikan Topologi Ringkas]. Minta siswa mengidentifikasi 3 potensi bottleneck dan solusi perbaikannya." },
+                    { id: 36, name: "Soal Isian Singkat Perintah CLI Linux", desc: "Menguji pemahaman sintaks dan parameter command Linux.", template: "Buat 10 soal isian singkat mengenai perintah terminal Linux Debian untuk manajemen file, hak akses (chmod/chown), dan status jaringan (netstat/systemctl/ip a)." },
+                    { id: 37, name: "Soal Pemahaman Keamanan Jaringan", desc: "Soal pilihan ganda mengenai konsep Port Scanning & IDS.", template: "Buatkan 5 soal pilihan ganda mengenai [Materi Keamanan, misal: Jenis-jenis Serangan Siber, Firewall, dan VPN PPTP/L2TP] beserta penjelasan mengapa opsi jawaban lain salah." },
+                    { id: 38, name: "Soal Studi Kasus Fiber Optik", desc: "Perhitungan Loss Budget dan analisis redaman serat optik.", template: "Buat 2 soal cerita perhitungan Loss Budget Fiber Optik (menghitung total attenuasi berdasarkan panjang kabel, jumlah splice, dan konektor). Lengkapi dengan langkah perhitungan matematika sederhana." },
+                    { id: 39, name: "Soal Menjodohkan Perangkat Hardware", desc: "Mencocokkan alat praktikum TKJ dengan fungsi utamanya.", template: "Buatkan soal tipe menjodohkan (Matching Test) berisi 10 alat/perangkat jaringan TKJ di Kolom A dan fungsi/deskripsinya yang diacak di Kolom B." },
+                    { id: 40, name: "Asesmen Diagnostik Awal Pembelajaran", desc: "Pemetaan kemampuan awal siswa sebelum masuk materi baru.", template: "Buatkan 5 pertanyaan asesmen diagnostik non-kognitif dan kognitif dasar untuk mengetahui sejauh mana pengalaman siswa kelas X terhadap [Topik, misal: Hardware Komputer dan Internet]." }
+                ]
+            },
+            {
+                id: "modul-05",
+                freeTag: "FREE #05",
+                title: "AI Rubrik Penilaian (Skoring Praktik)",
+                icon: "fa-solid fa-clipboard-check",
+                description: "Skala sikap, kriteria kelulusan, rubrik troubleshooting, K3, dan laporan.",
+                prompts: [
+                    { id: 41, name: "Rubrik Analitik Praktik Jaringan", desc: "Matriks penilaian komprehensif persiapan, proses, dan hasil.", template: "Buatkan Rubrik Penilaian Analitik berbentuk tabel untuk ujian praktik [Judul Ujian Praktik, misal: Setup Routerboard & Wireless Hotspot]. Komponen penilaian: Persiapan Alat (10%), Proses Konfigurasi (50%), Hasil/Pengujian (30%), Waktu (10%). Kategori skor 1-4." },
+                    { id: 42, name: "Skala Sikap & Karakter Kerja Industri", desc: "Penilaian kedisiplinan, kerapihan kabel, dan kemandirian.", template: "Buat rubrik pengamatan sikap kerja siswa di Lab TKJ yang menilai 4 aspek: K3LH, Kerjasama Tim, Tanggung Jawab Perangkat, dan Kemandirian Pemecahan Masalah dengan skala Likert 1-4 beserta indikatornya." },
+                    { id: 43, name: "Kriteria Kelulusan Ujian Praktik Keahlian (UKK)", desc: "Standar minimal pencapaian kompetensi siswa TKJ.", template: "Buatkan Kriteria Kelulusan Minimal (Rubrik Penilaian UKK TKJ) untuk paket keahlian Rancang Bangun Jaringan LAN/WAN. Cantumkan indikator 'Sangat Baik', 'Baik', 'Cukup', dan 'Tidak Lulus'." },
+                    { id: 44, name: "Rubrik Penilaian Troubleshooting Jaringan", desc: "Penilaian berdasarkan kecepatan dan metode diagnosa eror.", template: "Buatkan rubrik penilaian khusus untuk tugas Troubleshooting Jaringan. Aspek yang dinilai: Analisis Awal Gejala, Metodologi Pengujian (Ping/Traceroute), Solusi yang Diterapkan, dan Efisiensi Waktu." },
+                    { id: 45, name: "Rubrik Penilaian Presentasi Proyek Jaringan", desc: "Penilaian penyampaian hasil proyek di depan kelas.", template: "Susun rubrik penilaian presentasi hasil proyek jaringan komputer. Aspek mencakup: Penguasaan Materi Teknis, Kejelasan Penyampaian, Kualitas Slide/Demonstrasi, dan Kemampuan Menjawab Pertanyaan." },
+                    { id: 46, name: "Penilaian Teman Sejawat (Peer-Assessment)", desc: "Formulir evaluasi antar siswa dalam kerja kelompok.", template: "Buatkan lembar penilaian teman sejawat (Peer-Assessment) untuk kerja kelompok di lab TKJ. Berisi 5 pertanyaan singkat Ya/Tidak dan catatan kontribusi rekan tim." },
+                    { id: 47, name: "Rubrik Keselamatan & Kesehatan Kerja (K3LH)", desc: "Penilaian standar keselamatan kerja teknisi komputer.", template: "Buat rubrik penilaian K3LH di Lab TKJ. Indikator mencakup: Kerapian Manajemen Kabel (Cable Management), Penggunaan Grounding/Listrik Aman, Kebersihan Area Kerja, dan Penanganan Alat Sensitif." },
+                    { id: 48, name: "Rubrik Penilaian Laporan Praktikum TKJ", desc: "Format skoring sistematika laporan cetak/digital.", template: "Buatkan rubrik penilaian Laporan Hasil Praktikum TKJ. Aspek: Kelengkapan Tangkapan Layar (Screenshot), Kejelasan Langkah Kerja, Analisis Kesimpulan, dan Kerapian Format Dokumentasi." },
+                    { id: 49, name: "Rubrik Portofolio Hasil Karya Jaringan", desc: "Penilaian kumpulan dokumentasi proyek siswa.", template: "Susun rubrik evaluasi Portofolio Pembelajaran TKJ siswa selama 1 semester. Dinilai dari: Kelengkapan Dokumen, Aksesibilitas File, Progres Perbaikan, dan Kreativitas Solusi." },
+                    { id: 50, name: "Konversi Nilai Praktik ke Nilai Rapor", desc: "Formula dan panduan pengolahan skor mentah ke rapor.", template: "Buatkan panduan dan rumus konversi penilaian gabungan antara Tes Tulis (30%), Ujian Praktik/Performance (50%), dan Laporan/Portofolio (20%) menjadi nilai akhir rapor K-Merdeka." }
+                ]
+            },
+            {
+                id: "modul-06",
+                freeTag: "FREE #06",
+                title: "AI Media PPT (Slide Presentasi)",
+                icon: "fa-solid fa-file-powerpoint",
+                description: "Outline slide, script presentasi, visualisasi konsep, dan slide kuis.",
+                prompts: [
+                    { id: 51, name: "Outline Slide Presentasi Interaktif", desc: "Struktur 10 slide materi presentasi yang runtut.", template: "Buatkan outline 10 slide PowerPoint interaktif untuk materi [Materi, misal: Konsep & Cara Kerja Network Address Translation (NAT)]. Berikan judul tiap slide, poin-poin utama, dan visual yang disarankan." },
+                    { id: 52, name: "Script Narasi Presentasi Guru", desc: "Teks ucapan guru saat mengajar menggunakan PPT.", template: "Tuliskan script ucapan/narasi guru untuk mengajar menggunakan slide dengan topik [Topik, misal: Pengenalan Topologi Mesh & Star]. Sertakan instruksi kapan harus menunjuk gambar atau bertanya ke siswa." },
+                    { id: 53, name: "Slide Interaktif Pertanyaan Kelas", desc: "Slide selingan untuk mencairkan suasana mengantuk.", template: "Rancang 3 slide pertanyaan pilihan ganda interaktif / tebak-tebakan teknis untuk disisipkan di tengah presentasi tentang [Topik, misal: Keamanan Wi-Fi] guna mengecek pemahaman siswa." },
+                    { id: 54, name: "Rekomendasi Visualisasi Konsep Jaringan", desc: "Ide diagram, skema, dan ikon yang perlu ada di slide.", template: "Berikan deskripsi detail tata letak (layout) dan diagram visual yang harus digambar pada slide PPT untuk menjelaskan perbedaan antara [Konsep 1: Switch Layer 2] dan [Konsep 2: Switch Layer 3]." },
+                    { id: 55, name: "Slide Kuis Cepat Perintah CLI", desc: "Slide kuis singkat untuk diawal atau diakhir jam mengajar.", template: "Buat konten untuk 3 slide Kuis Cepat (Game Show style) tentang perintah-perintah dasar Linux. Sertakan Kunci Jawaban yang muncul pada klik berikutnya." },
+                    { id: 56, name: "Ringkasan Poin Kunci Pembelajaran", desc: "Slide penutup berisi 5 poin penting wajib ingat.", template: "Rangkum materi [Materi, misal: Sistem Pengalamatan IPv6] menjadi 1 slide ringkasan akhir (Takeaway Slide) berisi max 5 poin penting yang wajib dihafalkan siswa." },
+                    { id: 57, name: "Slide Pembuka Apersepsi Memikat", desc: "Slide awal untuk menarik perhatian siswa.", template: "Buat konsep slide pembuka (Slide 1-2) yang memikat untuk materi [Topik, misal: Bahaya Ransomware & Cyber Security]. Sertakan fakta mengejutkan atau gambar pemicu rasa penasaran." },
+                    { id: 58, name: "Slide Kesimpulan & Penugasan", desc: "Slide instruksi tugas mandiri / kelompok.", template: "Rancang slide penutup yang berisi ringkasan singkat, instruksi tugas rumah, link referensi belajar mandiri, dan kata-kata motivasi untuk calon IT Engineer." },
+                    { id: 59, name: "Desain Slide Studi Kasus Troubleshooting", desc: "Slide menyajikan masalah nyata untuk didiskusikan.", template: "Buat konten slide bertema 'Misteri Jaringan Putus': Sajikan skenario masalah [Masalah, misal: IP Conflict di Ruang Guru] lengkap dengan diagram peta jaringan sederhana untuk dipecahkan bersama." },
+                    { id: 60, name: "Slide Prosedur Jobsheet Praktikum", desc: "Slide tahapan alur praktik agar siswa tidak bingung.", template: "Susun konten slide PowerPoint yang menjelaskan alur alokasi waktu 4 jam pelajaran praktikum [Praktikum, misal: Setting Server DNS & Mail] dari penjelasan guru hingga pembersihan lab." }
+                ]
+            },
+            {
+                id: "modul-07",
+                freeTag: "FREE #07",
+                title: "AI Video Pembelajaran (Tutorial)",
+                icon: "fa-solid fa-video",
+                description: "Naskah video tutorial, konsep animasi, storyboard, dan script screencast.",
+                prompts: [
+                    { id: 61, name: "Naskah Video Tutorial Praktikum", desc: "Script video rekaman layar (Screencast Winbox/Packet Tracer).", template: "Buatkan naskah/script video tutorial durasi 5 menit untuk topik [Judul Tutorial, misal: Cara Setting VLAN di Cisco Packet Tracer]. Tuliskan dalam format 2 kolom: Visual (Tampilan Layar) dan Audio (Suara Narator)." },
+                    { id: 62, name: "Konsep Animasi Explainer Jaringan", desc: "Ide animasi explainer video konsep abstrak jaringan.", template: "Rancang konsep video animasi explainer durasi 3 menit yang menjelaskan [Konsep, misal: Cara Kerja DNS Server Mencari IP dari Domain Name]. Jelaskan karakter animasi dan alur cerita peran tiap server." },
+                    { id: 63, name: "Narasi Penjelasan Suara (Voiceover)", desc: "Teks narasi jelas dan ramah untuk di-dubbing.", template: "Tuliskan teks narasi voiceover yang santai namun edukatif untuk video pengenalan [Topik, misal: Mengenal Perangkat Utama Dalam Rak Server Data Center]. Durasi pembacaan sekitar 2 menit." },
+                    { id: 64, name: "Hook Pembuka Video Edukasi IT", desc: "Kalimat 15 detik pertama agar penonton betah nonton.", template: "Buatkan 3 pilihan kalimat Hook Pembuka (15 detik pertama) untuk video YouTube/TikTok Edukasi TKJ dengan judul [Judul, misal: Rahasia Internet Rumah Kamu Bisa Cepat dan Stabil!]." },
+                    { id: 65, name: "Storyboard Sederhana K3LH", desc: "Urutan adegan gambar dan transisi video.", template: "Buatkan deskripsi Storyboard 6 adegan (Scene 1 - Scene 6) untuk video panduan K3LH [Topik, misal: Cara Menggunakan Tang Crimp dan Tester yang Benar]." },
+                    { id: 66, name: "Script Screencast Install Linux Server", desc: "Panduan rekaman layar instalasi sistem operasi.", template: "Buat skrip narasi rekaman layar saat menuntun siswa melakukan instalasi [OS, misal: Debian 12 Server Tanpa GUI]. Tunjukkan titik-titik di mana guru harus memberikan peringatan penting." },
+                    { id: 67, name: "Format Video Q&A Mitos vs Fakta IT", desc: "Video meluruskan pemahaman salah di masyarakat.", template: "Buatkan skenario video Q&A yang membahas 3 Mitos vs Fakta Seputar Dunia Komputer & Jaringan (misal: 'Semakin Banyak Antena Wi-Fi Semakin Cepat Internet?')." },
+                    { id: 68, name: "Rangkuman Video Pendek (Shorts/Reels)", desc: "Script cepat durasi < 60 detik untuk media sosial.", template: "Tulis skrip video vertikal (Shorts/Reels) durasi 45 detik tentang tips cepat: [Tips, misal: 3 Perintah Command Prompt Paling Berguna Untuk Cek Jaringan]." },
+                    { id: 69, name: "Deskripsi, Judul & SEO Video YouTube", desc: "Optimasi SEO agar video pembelajaran mudah ditemukan.", template: "Buatkan 3 pilihan judul menarik, deskripsi lengkap beserta timestamps, dan 15 kata kunci (tags) untuk video tutorial pembelajaran YouTube berjudul [Judul Video Praktik TKJ]." },
+                    { id: 70, name: "Ide Seri Video Pembelajaran Berantai", desc: "Rancangan kurikulum playlist video pembelajaran.", template: "Rancang kurikulum playlist 5 seri video pendek pembelajaran mandiri untuk modul [Modul, misal: Dasar-dasar Mikrotik RouterOS untuk Pemula]." }
+                ]
+            },
+            {
+                id: "modul-08",
+                freeTag: "FREE #08",
+                title: "AI Aktivitas Pembelajaran (Game/Roleplay)",
+                icon: "fa-solid fa-gamepad",
+                description: "Ice breaking teknis, simulasi peran, game edukasi, dan challenge kelas.",
+                prompts: [
+                    { id: 71, name: "Ice Breaking Teknis Komputer", desc: "Permainan singkat pemanasan otak bertema IT.", template: "Rancang 1 aktivitas Ice Breaking durasi 5-10 menit bertema IT/Komputer (misal: 'Tebak Perintah CLI' atau 'Sambung Kata Protokol') yang seru dilakukan sebelum jam praktikum dimulai." },
+                    { id: 72, name: "Simulasi Peran / Roleplay IT Support", desc: "Siswa berperan sebagai Client dan Helpdesk.", template: "Rancang skenario aktivitas Roleplay (Simulasi Peran) di mana 1 siswa menjadi Teknisi IT Helpdesk dan 1 siswa menjadi User Awam yang emosional karena [Masalah Jaringan]. Tentukan panduan penilaiannya." },
+                    { id: 73, name: "Game Edukasi 'Packet Tracer Manusia'", desc: "Game fisik memperagakan alur data dalam jaringan.", template: "Buatkan aturan permainan edukasi tanpa komputer berjudul 'Packet Tracer Manusia' di mana siswa berperan sebagai Router, Switch, Packet, dan IP Address untuk mensimulasikan pengiriman data LAN." },
+                    { id: 74, name: "Diskusi Kelompok Model Jigsaw TKJ", desc: "Sistem belajar kelompok ahli membedah topik.", template: "Rancang panduan diskusi model Jigsaw untuk materi [Topik, misal: Jenis-jenis Keamanan Nirkabel - WEP, WPA, WPA2, WPA3]. Bagi tugas untuk 4 Tim Ahli." },
+                    { id: 75, name: "Challenge 15 Menit Troubleshooting", desc: "Tantangan berpacu dengan waktu membetulkan eror.", template: "Buat aturan dan skenario tantangan kilat 'Speed Troubleshooting 15 Menit': Guru merusak 1 opsi konfigurasi pada router, tim siswa berlomba menemukannya." },
+                    { id: 76, name: "Kompetisi Speed-Crimp Kabel UTP", desc: "Lomba merakit kabel UTP tercepat dan teruji.", template: "Buat panduan dan aturan main lomba internal kelas 'King of Crimping': Menilai kecepatan, kerapihan susunan kabel, dan keberhasilan uji kelayakan kabel LAN." },
+                    { id: 77, name: "Aktivitas Peer-Teaching (Siswa Mengajar)", desc: "Siswa ahli membantu teman sekelas yang belum paham.", template: "Buat mekanisme aktivitas Peer-Teaching di lab komputer di mana siswa yang selesai praktikum lebih cepat ditugaskan menjadi 'Asisten Laboratorium' untuk mendampingi temannya." },
+                    { id: 78, name: "Pemetaan Konsep (Mind Mapping Jaringan)", desc: "Tugas kreatif membuat visualisasi peta konsep IT.", template: "Buat panduan tugas membuat Mind Map (Peta Konsep) kreatif berbasis kertas/digital untuk merangkum seluruh ekosistem [Topik, misal: Infrastruktur Layanan Internet/ISP]." },
+                    { id: 79, name: "Eksperimen Mandiri Simulation Software", desc: "Panduan eksplorasi mandiri menggunakan Cisco Packet Tracer.", template: "Buat instruksi lembar eksplorasi mandiri siswa menggunakan Cisco Packet Tracer: Minta siswa mencoba menghubungkan PC dan Server lalu mengamati lalu lintas paket di mode Simulation." },
+                    { id: 80, name: "Debat Isu Teknologi & Etika Keamanan", desc: "Debat terstruktur isu etika hacker & privasi data.", template: "Susun skenario dan aturan debat kelas dengan mosi: 'Apakah Perusahaan Boleh Memantau Seluruh Aktivitas Internet Karyawannya di Jaringan Kantor?' Bagi kelas jadi Tim Pro dan Kontra." }
+                ]
+            },
+            {
+                id: "modul-09",
+                freeTag: "FREE #09",
+                title: "AI Proyek & Teaching Factory (TEFA)",
+                icon: "fa-solid fa-briefcase",
+                description: "Proyek PBL, simulasi Teaching Factory (Tefa), brief klien, dan SOP proyek.",
+                prompts: [
+                    { id: 81, name: "Rancangan Proyek PBL (Project-Based Learning)", desc: "Perancangan proyek riil membangun jaringan mini cafe/office.", template: "Buat rancangan modul Project-Based Learning (PBL) durasi 3 minggu dengan tema: [Tema Proyek, misal: Perancangan Jaringan Wi-Fi & Billing Hotspot untuk Kafe 2 Lantai]. Cantumkan milestone mingguan." },
+                    { id: 82, name: "Simulasi Teaching Factory Jasa IT", desc: "Mekanisme unit usaha sekolah bidang perawatan PC/Jaringan.", template: "Rancang model operasional Teaching Factory (Tefa) Jurusan TKJ untuk unit layanan [Jenis Layanan, misal: Jasa Servis Komputer & Instalasi Wi-Fi Rumah/Sekolah]. Sertakan alur pelayanan konsumen." },
+                    { id: 83, name: "Katalog Produk Layanan Jasa Komputer", desc: "Membuat katalog produk layanan teknis karya siswa.", template: "Buatkan draf Katalog Layanan Jasa dan Price List terjangkau yang dapat ditawarkan Teaching Factory TKJ kepada warga sekolah/masyarakat sekitar." },
+                    { id: 84, name: "Brief Klien / Pelanggan (Client Requirement)", desc: "Dokumen kebutuhan klien simulasi untuk dianalisis siswa.", template: "Tuliskan lembar 'Client Requirement Brief' simulasi dari seorang pemilik toko retail yang membutuhkan sistem Kasir terhubung LAN dan Wi-Fi Pengunjung. Minta siswa membuat proposal teknisnya." },
+                    { id: 85, name: "SOP Kerja Proyek & Keselamatan Kerja", desc: "Standard Operating Procedure dalam pengerjaan proyek IT.", template: "Susun Standard Operating Procedure (SOP) pengerjaan proyek perakitan dan penataan kabel dalam rak server (Rack Cabinet Wiring) untuk tim siswa Tefa TKJ." },
+                    { id: 86, name: "Time Schedule / Gantt Chart Proyek", desc: "Jadwal pengerjaan proyek dari perancangan hingga testing.", template: "Buatkan tabel estimasi waktu (Gantt Chart sederhana) pengerjaan proyek jaringan skala kecil selama 4 minggu mulai dari Survey, Design, Purchasing, Installation, Testing, hingga Handover." },
+                    { id: 87, name: "Pembagian Peran Tim Kerja Proyek", desc: "Deskripsi tugas Project Manager, Network Engineer, Cabling Tech.", template: "Buat deskripsi tugas (Job Description) pembagian peran tim proyek siswa yang terdiri dari: Project Manager, Network Engineer, System Administrator, dan Field Cabling Technician." },
+                    { id: 88, name: "Rubrik Penilaian Kinerja Proyek Tefa", desc: "Penilaian aspek profesionalisme dan kepuasan pelanggan.", template: "Buatkan rubrik penilaian proyek Teaching Factory yang mencakup aspek: Ketepatan Waktu (Deadline), Kerapihan Hasil Pekerjaan, Kesesuaian Budget, dan Sikap Pelayanan Klien." },
+                    { id: 89, name: "Formulir Evaluasi Kepuasan Pelanggan", desc: "Kuisioner umpan balik dari pengguna jasa Tefa TKJ.", template: "Buat lembar kuesioner singkat evaluasi kepuasan pelanggan (Customer Satisfaction Survey) untuk layanan servis komputer/jaringan yang dikerjakan siswa." },
+                    { id: 90, name: "Portofolio Proyek Siswa (Case Study)", desc: "Template laporan akhir proyek bernilai jual.", template: "Buatkan template Laporan Portofolio Proyek Akhir Siswa berformat Case Study profesional yang siap dipajang di LinkedIn atau ditunjukkan saat melamar kerja." }
+                ]
+            },
+            {
+                id: "modul-10",
+                freeTag: "FREE #10",
+                title: "AI Administrasi Guru (Modul Ajar/RPP)",
+                icon: "fa-solid fa-folder-open",
+                description: "Modul ajar, analisis CP/ATP, prota/promes, jurnal harian, dan SOP lab.",
+                prompts: [
+                    { id: 91, name: "Modul Ajar / RPP Kurikulum Merdeka", desc: "Penyusun Modul Ajar lengkap sesuai format standar Kemdikbud.", template: "Bertindaklah sebagai Ahli Kurikulum Merdeka SMK. Buatkan Draf Modul Ajar lengkap untuk Mata Pelajaran Konsentrasi Keahlian TKJ/TJKT. Elemen: [Elemen, misal: Perancangan dan Pengalamatan Jaringan], Alokasi Waktu: [Misal: 18 JP x 45 Menit], Kelas: XI. Format harus memuat: Informasi Umum, Target Peserta Didik, Profil Pelajar Pancasila, Model Pembelajaran (PBL/PJBL), Tujuan Pembelajaran, Pemahaman Bermakna, Pertanyaan Pemantik, Kegiatan Pembelajaran (Pendahuluan, Inti, Penutup), dan Asesmen (Diagnostik, Formatif, Sumatif)." },
+                    { id: 92, name: "Analisis Capaian Pembelajaran (CP) ke ATP", desc: "Membedah CP menjadi Tujuan Pembelajaran (TP) & Alur ATP.", template: "Bantu saya menganalisis Capaian Pembelajaran (CP) Kurikulum Merdeka TJKT berikut: '[Kutip kalimat CP TKJ]'. Pecah menjadi beberapa Tujuan Pembelajaran (TP) yang terukur dan susun menjadi Alur Tujuan Pembelajaran (ATP) yang logis untuk Kelas X/XI/XII." },
+                    { id: 93, name: "Program Tahunan & Program Semester", desc: "Pemetaan alokasi waktu JP efektif selama 1 tahun ajaran.", template: "Buatkan draf pemetaan Program Semester (Promes) untuk mata pelajaran Produktif TKJ kelas XI dengan total [Jumlah] Minggu Efektif. Distribusikan JP untuk materi [Sebutkan 4-5 Topik Utama], Minggu Asesmen, dan Cadangan." },
+                    { id: 94, name: "Jurnal Harian & Catatan Mengajar Guru", desc: "Format ringkas rekam jejak kegiatan belajar harian.", template: "Buatkan template Jurnal Harian Mengajar Guru TKJ berbentuk tabel yang mencakup: Hari/Tanggal, Jam Ke-, Kelas, TP/Materi Yang Dibahas, Jumlah Siswa Hadir/Absen, Hambatan Pembelajaran, dan Solusi/Tindak Lanjut." },
+                    { id: 95, name: "Pemetaan & Inventarisir Perangkat Lab", desc: "Format pencatatan aset PC, Switch, Mikrotik, dan Kabel.", template: "Buat format tabel Pendataan Aset & Inventaris Lab Komputer TKJ yang mencakup: Kode Perangkat, Nama Perangkat, Spesifikasi/Merk, Jumlah, Kondisi (Baik/Rusak Ringan/Rusak Berat), Tanggal Pengadaan, dan Lokasi Rak." },
+                    { id: 96, name: "Draft Pesan Komunikasi Orang Tua Siswa", desc: "Pesan sopan dan informatif ke orang tua terkait kendala/prestasi.", template: "Tuliskan 2 draf pesan WhatsApp yang sopan dan profesional dari Guru/Wali Kelas TKJ kepada Orang Tua Siswa: 1) Pesan mengabarkan siswa sering tidak mengikuti praktikum lab, 2) Pesan mengapresiasi keaktifan dan nilai praktikum siswa yang sangat baik." },
+                    { id: 97, name: "Surat Pemberitahuan Kegiatan Praktik / KKL", desc: "Draf surat resmi sekolah untuk izin praktikum luar / KKL.", template: "Buatkan draf Surat Pemberitahuan Resmi Sekolah kepada Orang Tua/Wali Murid mengenai kegiatan [Nama Kegiatan, misal: Kunjungan Industri / Praktik Lapangan Pemetaan Fiber Optik]. Cantumkan waktu, lokasi, biaya (jika ada), dan permohonan izin." },
+                    { id: 98, name: "Laporan Hasil Belajar & Catatan Rapor", desc: "Kalimat narasi deskripsi perkembangan karakter & akademik.", template: "Tuliskan 5 contoh kalimat narasi deskripsi Rapor K-Merdeka (Catatan Wali Kelas) untuk siswa SMK TKJ yang memiliki karakter: 1) Sangat terampil praktik tapi teori kurang, 2) Tekun dan rajin, 3) Perlu peningkatan kedisiplinan hadir." },
+                    { id: 99, name: "Standard Operating Procedure (SOP) Lab TKJ", desc: "Aturan tata tertib masuk, menggunakan, dan keluar lab.", template: "Buat draf Teks Banner Tata Tertib & SOP Penggunaan Laboratorium Komputer & Jaringan SMK TKJ. Mencakup aturan sebelum masuk, saat praktikum, larangan makan/minum, dan prosedur mematikan alat (shutdown)." },
+                    { id: 100, name: "Usulan Anggaran & Kebutuhan Sarpras Lab", desc: "Proposal permohonan pengadaan peralatan praktikum baru.", template: "Buatkan draf Surat Usulan Pengadaan Alat & Bahan Praktikum (Sarpras) untuk Lab TKJ ke Kepala Sekolah. Alasan pengusulan: Pembaruan perangkat tua untuk mendukung kurikulum industri. Cantumkan rincian alat prioritas (Router, Switch Managed, Fiber Splicer, Crimping Tool, Tester) beserta estimasi manfaatnya." }
+                ]
+            }
+        ];
+const state={module:"all",search:"",open:new Set()};
+const $=id=>document.getElementById(id);
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function visibleModules(){const q=state.search.trim().toLowerCase();return toolkitData.map(m=>({...m,prompts:m.prompts.filter(p=>!q||[m.title,m.description,m.freeTag,p.name,p.desc,p.template].join(" ").toLowerCase().includes(q))})).filter(m=>(state.module==="all"||m.id===state.module)&&m.prompts.length)}
+function populateSelect(){$("moduleSelect").innerHTML='<option value="all">Semua Modul (100 Prompt)</option>'+toolkitData.map(m=>`<option value="${esc(m.id)}">${esc(m.freeTag)} — ${esc(m.title)}</option>`).join("")}
+function render(){const list=visibleModules();let total=0,html="";list.forEach(m=>{total+=m.prompts.length;const open=state.open.has(m.id);html+=`<article class="module ${open?"open":""}" id="${esc(m.id)}"><button class="module-head" type="button" data-toggle="${esc(m.id)}" aria-expanded="${open}"><div class="module-icon">${esc(m.freeTag.replace("FREE #",""))}</div><div class="module-info"><div class="tag">${esc(m.freeTag)}</div><div class="module-title">${esc(m.title)}</div><div class="module-desc">${esc(m.description)}</div></div><div class="chevron">⌄</div></button><div class="module-body"><div class="prompts">${m.prompts.map(p=>`<div class="prompt"><div class="prompt-top"><span class="num">#${String(p.id).padStart(2,"0")}</span><span class="ptype">Prompt AI</span></div><h3>${esc(p.name)}</h3><p class="desc">${esc(p.desc)}</p><div class="prompt-text" id="prompt-${p.id}">${esc(p.template)}</div><button class="copy" type="button" data-copy="${p.id}">▣ Salin Prompt</button></div>`).join("")}</div></div></article>`});$("modules").innerHTML=html||`<div class="empty"><b>Prompt tidak ditemukan.</b><br><br>Coba kata kunci lain atau tekan Reset.</div>`;$("count").textContent=`${total} Prompt`}
+function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove("show"),2200)}
+async function copyPrompt(id){const el=$("prompt-"+id);if(!el)return;const text=el.textContent.trim();try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else{const ta=document.createElement("textarea");ta.value=text;ta.readOnly=true;ta.style.position="fixed";ta.style.left="-9999px";document.body.appendChild(ta);ta.focus();ta.select();if(!document.execCommand("copy"))throw Error("copy");ta.remove()}toast("✓ Prompt berhasil disalin")}catch(e){const range=document.createRange();range.selectNodeContents(el);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);toast("Teks dipilih — gunakan Salin/Copy")}}
+$("modules").addEventListener("click",e=>{const t=e.target.closest("[data-toggle]");if(t){const id=t.dataset.toggle;state.open.has(id)?state.open.delete(id):state.open.add(id);render();return}const c=e.target.closest("[data-copy]");if(c)copyPrompt(c.dataset.copy)});
+$("moduleSelect").addEventListener("change",e=>{state.module=e.target.value;render()});
+$("search").addEventListener("input",e=>{state.search=e.target.value;render()});
+$("openAll").addEventListener("click",()=>{visibleModules().forEach(m=>state.open.add(m.id));render()});
+$("closeAll").addEventListener("click",()=>{state.open.clear();render()});
+$("reset").addEventListener("click",()=>{state.module="all";state.search="";state.open.clear();$("moduleSelect").value="all";$("search").value="";render()});
+populateSelect();render();
+</script>
+</div>
+
+<script>
+const toolkitData = [
+            {
+                id: "modul-01",
+                freeTag: "FREE #01",
+                title: "AI Untuk Guru TKJ (Eksplorasi Konsep)",
+                icon: "fa-solid fa-microchip",
+                description: "Dasar-dasar eksplorasi pembelajaran TKJ, analogi jaringan, dan skenario troubleshooting awal.",
+                prompts: [
+                    { id: 1, name: "Analogi Sederhana Konsep Jaringan", desc: "Menjelaskan konsep teknis yang rumit menjadi analogi kehidupan sehari-hari.", template: "Bertindaklah sebagai Ahli Jaringan Komputer dan Edukator SMK. Buatkan 3 analogi sederhana dari dunia nyata untuk menjelaskan konsep [Konsep TKJ, misal: Subnetting / Model OSI / Router vs Switch] agar siswa SMK TKJ kelas X dapat memahaminya dengan cepat dan mudah." },
+                    { id: 2, name: "Skenario Problem-Solving Jaringan", desc: "Membuat studi kasus eror jaringan untuk melatih analisis troubleshooting.", template: "Buatkan 1 studi kasus masalah jaringan lokal (LAN) di mana [Skenario Masalah, misal: Komputer klien tidak bisa terkoneksi ke server lokal padahal IP sudah statis]. Berikan deskripsi gejala, langkah pengujian command prompt (ping/tracert), dan solusi pemecahannya secara runtut." },
+                    { id: 3, name: "Penyusun Rangkuman Modul Mikrotik", desc: "Meringkas materi panjang Mikrotik RouterOS menjadi poin kunci.", template: "Rangkum materi tentang [Materi Mikrotik, misal: Basic Router Configuration / Firewall Filter Rules] menjadi 5 poin utama yang berfokus pada perintah praktis di Winbox/Terminal dan fungsinya dalam jaringan produksi." },
+                    { id: 4, name: "Penyusun Istilah Teknis (Glosarium)", desc: "Membuat daftar glosarium istilah TKJ beserta definisi praktis.", template: "Buatkan glosarium istilah teknis untuk topik [Topik TKJ, misal: Administrasi Infrastruktur Jaringan] berisi 10 istilah penting. Sertakan istilah teknis, kepanjangan, definisi ringkas, dan contoh penerapannya dalam praktikum." },
+                    { id: 5, name: "Rancangan Studi Kasus Keamanan Siber", desc: "Studi kasus keamanan jaringan untuk siswa kelas XI/XII.", template: "Buatkan skenario studi kasus serangan keamanan jaringan ringan (misal: [Jenis Serangan, misal: MAC Flooding / Rogue DHCP / Wi-Fi Deauth]). Jelaskan kronologi kejadian, dampaknya pada jaringan sekolah, serta langkah pencegahannya." },
+                    { id: 6, name: "Panduan Memilih Hardware Lab", desc: "Analisis kebutuhan perangkat lunak dan keras untuk praktikum.", template: "Rekomendasikan spesifikasi minimal PC Router dan Switch yang ideal untuk praktikum [Topik Praktikum, misal: Manajemen Bandwidth & Routing OSPF] di SMK TKJ dengan anggaran terjangkau. Berikan alasan teknisnya." },
+                    { id: 7, name: "Latihan Command Line Interface (CLI)", desc: "Daftar perintah CLI dasar beserta penjelasan fungsionalnya.", template: "Buat panduan cheat-sheet CLI untuk [Sistem Operasi/Perangkat, misal: Cisco IOS / Linux Debian 12 / Mikrotik CLI] yang berisi 10 perintah vital paling sering digunakan teknisi jaringan beserta fungsi dan sintaksnya." },
+                    { id: 8, name: "Pemicu Diskusi Reflektif TKJ", desc: "Pertanyaan diskusi kritis terkait perkembangan teknologi IT.", template: "Buat 3 pertanyaan diskusi interaktif dan memicu berpikir kritis (HOTS) untuk siswa TKJ mengenai topik [Topik, misal: Implikasi Migrasi IPv4 ke IPv6 / Penggunaan Cloud vs On-Premise Server]." },
+                    { id: 9, name: "Skenario Pelayanan Pelanggan (Teknisi ISP)", desc: "Simulasi interaksi teknisi lapangan dengan konsumen.", template: "Buat naskah simulasi percakapan antara Teknisi Support ISP dan Pelanggan yang mengalami masalah [Kendala, misal: Koneksi Internet Lambat dan Lampu PON Router Berkedip Merah]. Sertakan tata cara komunikasi profesional." },
+                    { id: 10, name: "Ide Proyek Mini Jaringan Sekolah", desc: "Gagasan proyek mini yang bisa dikerjakan siswa secara berkelompok.", template: "Berikan 3 ide proyek mini jaringan yang realistis untuk dikerjakan tim siswa SMK TKJ dalam kurun waktu 1 minggu menggunakan alat [Alat, misal: Routerboard Mikrotik & Access Point TP-Link]. Berikan target outputnya." }
+                ]
+            },
+            {
+                id: "modul-02",
+                freeTag: "FREE #02",
+                title: "AI Materi Pembelajaran (Bahan Ajar)",
+                icon: "fa-solid fa-book-open",
+                description: "Menyusun bahan ajar, modul rangkuman, dan penjelasan konsep mendalam.",
+                prompts: [
+                    { id: 11, name: "Modul Ringkas Subnetting VLSM", desc: "Membuat materi langkah demi langkah perhitungan IP.", template: "Buat materi pembelajaran terstruktur mengenai [Topik Subnetting, misal: Variable Length Subnet Masking (VLSM)]. Sertakan rumus, langkah perhitungan bertahap, dan 1 contoh soal lengkap beserta langkah penyelesaiannya secara mendetail." },
+                    { id: 12, name: "Penjelasan Protokol Jaringan (OSI Layer)", desc: "Penjelasan cara kerja protokol dari layer 1 hingga 7.", template: "Jelaskan alur perjalanan paket data dari layer Application hingga Physical berdasarkan model OSI Layer saat seorang pengguna membuka halaman [Aktivitas, misal: Website HTTPS di Browser]. Sertakan fungsi tiap layer." },
+                    { id: 13, name: "Bahan Ajar Layanan Server (Linux Debian)", desc: "Modul teks konfigurasi layanan server berbasis Linux.", template: "Buat bahan ajar praktis untuk konfigurasi [Layanan Server, misal: DHCP Server & DNS Server di Debian 12]. Tuliskan struktur file konfigurasi, perintah eksekusi, serta langkah pengujian dari sisi client Windows." },
+                    { id: 14, name: "Materi Teknologi Jaringan Nirkabel (WLAN)", desc: "Bahan ajar mengenai standar Wi-Fi, frekuensi, dan interferensi.", template: "Susun materi singkat mengenai [Topik Wireless, misal: Perbandingan Frekuensi 2.4 GHz vs 5 GHz dan Masalah Interferensi Sinyal Wi-Fi]. Buat dalam bentuk poin-poin yang cocok untuk slide presentasi atau handout siswa." },
+                    { id: 15, name: "Panduan Praktis Fiber Optik (FO)", desc: "Materi dasar media transmisi kabel FO dan penyambungan.", template: "Buat panduan materi dasar Fiber Optik yang mencakup: Jenis kabel FO (Single-mode vs Multi-mode), fungsi alat (Fusion Splicer, OTDR, OPM, Cleaver), dan prosedur K3 saat menyambung core optik." },
+                    { id: 16, name: "Modul Konsep Routing Dinamis", desc: "Materi perbedaan Routing Statis vs OSPF vs BGP.", template: "Buatkan materi perbandingan mendalam antara [Jenis Routing, misal: Static Routing vs OSPF Routing]. Jelaskan kelebihan, kekurangan, kriteria penggunaan, dan mekanisme update tabel routing masing-masing." },
+                    { id: 17, name: "Penjelasan Teknologi Cloud Computing", desc: "Penyusunan modul pengenalan IaaS, PaaS, dan SaaS.", template: "Susun materi pengenalan Cloud Computing untuk tingkat SMK TKJ. Jelaskan perbedaan model layanan IaaS, PaaS, dan SaaS menggunakan contoh layanan populer yang sering digunakan industri saat ini." },
+                    { id: 18, name: "Panduan Troubleshooting Hardware PC", desc: "Materi pendeteksian kerusakan RAM, Mobo, PSU via beep code.", template: "Buatkan panduan identifikasi kerusakan hardware PC berdasarkan [Gejala, misal: Kode Beep Award/AMI BIOS dan Tampilan Black Screen]. Sertakan langkah perbaikan awal secara sistematis." },
+                    { id: 19, name: "Materi Sistem Keamanan Firewall Mikrotik", desc: "Penjelasan rantai (chain) input, forward, output.", template: "Jelaskan konsep dasar Firewall Filter Rules Mikrotik (Chain Input, Forward, Output, serta Action Accept, Drop, Reject) dengan bahasa yang intuitif untuk siswa SMK kelas XI." },
+                    { id: 20, name: "Handout Konfigurasi VLAN & Trunking", desc: "Ringkasan konsep VLAN ID, Access Port, dan Trunk Port.", template: "Buatkan handout ringkas berisi konsep VLAN, perbedaan Access Port vs Trunk Port (802.1Q), dan fungsi Inter-VLAN Routing pada Switch Layer 3 / Router." }
+                ]
+            },
+            {
+                id: "modul-03",
+                freeTag: "FREE #03",
+                title: "AI Jobsheet Praktik (LKPD Lab)",
+                icon: "fa-solid fa-list-check",
+                description: "Menyusun instruksi praktikum, skema topologi, dan laporan praktikum.",
+                prompts: [
+                    { id: 21, name: "Jobsheet Krimping Kabel UTP (Straight/Cross)", desc: "Panduan praktik pembuatan kabel jaringan UTP RJ-45.", template: "Buatkan Lembar Kerja Siswa / Jobsheet Praktikum untuk [Judul Praktik: Pembuatan Kabel UTP Straight dan Cross]. Format harus mencakup: Tujuan, Alat & Bahan, Standar Urutan Warna T568A/T568B, Langkah Kerja Safety, dan Lembar Pengujian Cable Tester." },
+                    { id: 22, name: "Jobsheet Konfigurasi Router Mikrotik Dasar", desc: "Instruksi langkah demi langkah setup internet gateway.", template: "Buatkan Jobsheet Praktik Mikrotik: [Topik: Konfigurasi Internet Gateway & DHCP Server]. Tentukan topologi sederhana (ISP -> Routerboard -> Client), batasan IP, dan checklist keberhasilan praktikum." },
+                    { id: 23, name: "Jobsheet Instalasi Server VoIP Asterisk", desc: "Panduan praktik server komunikasi suara via IP.", template: "Susun Jobsheet Praktikum Instalasi & Konfigurasi VoIP Server menggunakan [Software, misal: Asterisk / Briker / Elastix] dan Softphone (Zoiper) di PC/Virtual Box. Lengkapi dengan skenario dial-plan 2 extension." },
+                    { id: 24, name: "Jobsheet Setup Access Point & Hotspot Mikrotik", desc: "Instruksi konfigurasi captive portal dan user manager.", template: "Buatkan Jobsheet Praktik [Topik: Layanan Hotspot Mikrotik & User Manager]. Cantumkan panduan pembuatan profil user, pembatasan kecepatan (bandwidth limit), dan kustomisasi halaman login sederhana." },
+                    { id: 25, name: "Jobsheet Penyambungan Fiber Optik (Splicing)", desc: "Langkah kerja penggunaan Fusion Splicer.", template: "Buat Jobsheet Praktikum Penyambungan Fiber Optik menggunakan Fusion Splicer. Tekankan langkah keselamatan kerja (K3), pengupasan cladding, cleaving, proses splicing, dan pengukuran redaman dengan OPM." },
+                    { id: 26, name: "Jobsheet VLAN pada Switch Managed", desc: "Skema dan instruksi pemisahan trafik jaringan VLAN.", template: "Buatkan Jobsheet Praktikum Konfigurasi VLAN pada [Perangkat, misal: Switch Managed Cisco / Mikrotik CRS]. Sertakan alokasi Port untuk VLAN 10 (Siswa) dan VLAN 20 (Guru) serta perintah verifikasinya." },
+                    { id: 27, name: "Jobsheet Virtualisasi Proxmox / VirtualBox", desc: "Panduan praktik pembuatan Virtual Machine (VM).", template: "Susun Jobsheet Praktik Virtualisasi Server menggunakan [Aplikasi, misal: Proxmox VE / Oracle VirtualBox]. Pandu siswa membuat VM Linux, alokasi resource RAM/Disk, dan setting Adapter Jaringan (NAT/Bridged)." },
+                    { id: 28, name: "Jobsheet Troubleshooting Jaringan LAN", desc: "Skenario error buatan yang harus diatasi siswa.", template: "Buatkan Jobsheet Praktik Troubleshooting Jaringan di mana guru secara sengaja mengacak konfigurasi [Konfigurasi, misal: IP Subnet Mask & Default Gateway]. Tuliskan tugas siswa untuk melacak dan membedah masalah." },
+                    { id: 29, name: "Jobsheet Management Bandwidth (Simple Queue)", desc: "Langkah pembatasan kecepatan download/upload.", template: "Buatkan Jobsheet Praktikum Mikrotik: Pembatasan Bandwidth Jaringan menggunakan metode Simple Queue dan Queue Tree berdasarkan alokasi waktu/IP Client." },
+                    { id: 30, name: "Jobsheet Instalasi & Pengujian Web Server Apache", desc: "Praktik setup HTTP server di Debian Linux.", template: "Buat Jobsheet Praktik Instalasi Web Server Apache2 & PHP di Linux Debian. Sertakan langkah pembuatan file index.html kustom dan pengujian akses via browser client." }
+                ]
+            },
+            {
+                id: "modul-04",
+                freeTag: "FREE #04",
+                title: "AI Soal & Asesmen (Evaluasi)",
+                icon: "fa-solid fa-file-pen",
+                description: "Menyusun soal pilihan ganda, essay HOTS, kuis singkat, dan kunci jawaban.",
+                prompts: [
+                    { id: 31, name: "Soal Pilihan Ganda Subnetting & IP Address", desc: "10 Soal pilihan ganda beserta pembahasannya.", template: "Buatkan 5 soal pilihan ganda (5 opsi A-E) tingkat kesulitan sedang hingga HOTS untuk materi [Materi, misal: Perhitungan Subnetting IPv4 & Classless Inter-Domain Routing (CIDR)]. Lengkapi dengan kunci jawaban dan pembahasan rinci." },
+                    { id: 32, name: "Soal Essay HOTS Troubleshooting Server", desc: "Pertanyaan essay berorientasi pemecahan masalah nyata.", template: "Buatkan 3 soal essay berstandar HOTS tentang analisis masalah [Topik, misal: Web Server Tidak Bisa Diakses dari Luar Jaringan Lokal]. Berikan pula kunci jawaban dan indikator kedalaman jawaban siswa." },
+                    { id: 33, name: "Kuis Ringkas Pre-Test Praktikum Mikrotik", desc: "Soal cepat 5 menit sebelum masuk lab komputer.", template: "Buat 5 pertanyaan kuis singkat (Benar/Salah atau Isian Singkat) untuk menguji kesiapan siswa sebelum praktikum [Topik Praktikum, misal: Firewall Mangle & Load Balancing]." },
+                    { id: 34, name: "Bank Soal Asesmen Sumatif Akhir Semester", desc: "Paket soal komprehensif Administrasi Infrastruktur Jaringan.", template: "Buatkan Paket Soal Asesmen Sumatif (10 Pilihan Ganda & 2 Essay) untuk mata pelajaran Produktif TKJ kelas XI topik [Materi, misal: Routing Statis dan Dinamis]. Sertakan kisi-kisi soalnya." },
+                    { id: 35, name: "Soal Analisis Topologi Jaringan", desc: "Menganalisis gambar/deskripsi topologi yang efisien.", template: "Buat 1 soal studi analisis berdasarkan deskripsi topologi jaringan kantor 3 lantai berikut: [Deskripsikan Topologi Ringkas]. Minta siswa mengidentifikasi 3 potensi bottleneck dan solusi perbaikannya." },
+                    { id: 36, name: "Soal Isian Singkat Perintah CLI Linux", desc: "Menguji pemahaman sintaks dan parameter command Linux.", template: "Buat 10 soal isian singkat mengenai perintah terminal Linux Debian untuk manajemen file, hak akses (chmod/chown), dan status jaringan (netstat/systemctl/ip a)." },
+                    { id: 37, name: "Soal Pemahaman Keamanan Jaringan", desc: "Soal pilihan ganda mengenai konsep Port Scanning & IDS.", template: "Buatkan 5 soal pilihan ganda mengenai [Materi Keamanan, misal: Jenis-jenis Serangan Siber, Firewall, dan VPN PPTP/L2TP] beserta penjelasan mengapa opsi jawaban lain salah." },
+                    { id: 38, name: "Soal Studi Kasus Fiber Optik", desc: "Perhitungan Loss Budget dan analisis redaman serat optik.", template: "Buat 2 soal cerita perhitungan Loss Budget Fiber Optik (menghitung total attenuasi berdasarkan panjang kabel, jumlah splice, dan konektor). Lengkapi dengan langkah perhitungan matematika sederhana." },
+                    { id: 39, name: "Soal Menjodohkan Perangkat Hardware", desc: "Mencocokkan alat praktikum TKJ dengan fungsi utamanya.", template: "Buatkan soal tipe menjodohkan (Matching Test) berisi 10 alat/perangkat jaringan TKJ di Kolom A dan fungsi/deskripsinya yang diacak di Kolom B." },
+                    { id: 40, name: "Asesmen Diagnostik Awal Pembelajaran", desc: "Pemetaan kemampuan awal siswa sebelum masuk materi baru.", template: "Buatkan 5 pertanyaan asesmen diagnostik non-kognitif dan kognitif dasar untuk mengetahui sejauh mana pengalaman siswa kelas X terhadap [Topik, misal: Hardware Komputer dan Internet]." }
+                ]
+            },
+            {
+                id: "modul-05",
+                freeTag: "FREE #05",
+                title: "AI Rubrik Penilaian (Skoring Praktik)",
+                icon: "fa-solid fa-clipboard-check",
+                description: "Skala sikap, kriteria kelulusan, rubrik troubleshooting, K3, dan laporan.",
+                prompts: [
+                    { id: 41, name: "Rubrik Analitik Praktik Jaringan", desc: "Matriks penilaian komprehensif persiapan, proses, dan hasil.", template: "Buatkan Rubrik Penilaian Analitik berbentuk tabel untuk ujian praktik [Judul Ujian Praktik, misal: Setup Routerboard & Wireless Hotspot]. Komponen penilaian: Persiapan Alat (10%), Proses Konfigurasi (50%), Hasil/Pengujian (30%), Waktu (10%). Kategori skor 1-4." },
+                    { id: 42, name: "Skala Sikap & Karakter Kerja Industri", desc: "Penilaian kedisiplinan, kerapihan kabel, dan kemandirian.", template: "Buat rubrik pengamatan sikap kerja siswa di Lab TKJ yang menilai 4 aspek: K3LH, Kerjasama Tim, Tanggung Jawab Perangkat, dan Kemandirian Pemecahan Masalah dengan skala Likert 1-4 beserta indikatornya." },
+                    { id: 43, name: "Kriteria Kelulusan Ujian Praktik Keahlian (UKK)", desc: "Standar minimal pencapaian kompetensi siswa TKJ.", template: "Buatkan Kriteria Kelulusan Minimal (Rubrik Penilaian UKK TKJ) untuk paket keahlian Rancang Bangun Jaringan LAN/WAN. Cantumkan indikator 'Sangat Baik', 'Baik', 'Cukup', dan 'Tidak Lulus'." },
+                    { id: 44, name: "Rubrik Penilaian Troubleshooting Jaringan", desc: "Penilaian berdasarkan kecepatan dan metode diagnosa eror.", template: "Buatkan rubrik penilaian khusus untuk tugas Troubleshooting Jaringan. Aspek yang dinilai: Analisis Awal Gejala, Metodologi Pengujian (Ping/Traceroute), Solusi yang Diterapkan, dan Efisiensi Waktu." },
+                    { id: 45, name: "Rubrik Penilaian Presentasi Proyek Jaringan", desc: "Penilaian penyampaian hasil proyek di depan kelas.", template: "Susun rubrik penilaian presentasi hasil proyek jaringan komputer. Aspek mencakup: Penguasaan Materi Teknis, Kejelasan Penyampaian, Kualitas Slide/Demonstrasi, dan Kemampuan Menjawab Pertanyaan." },
+                    { id: 46, name: "Penilaian Teman Sejawat (Peer-Assessment)", desc: "Formulir evaluasi antar siswa dalam kerja kelompok.", template: "Buatkan lembar penilaian teman sejawat (Peer-Assessment) untuk kerja kelompok di lab TKJ. Berisi 5 pertanyaan singkat Ya/Tidak dan catatan kontribusi rekan tim." },
+                    { id: 47, name: "Rubrik Keselamatan & Kesehatan Kerja (K3LH)", desc: "Penilaian standar keselamatan kerja teknisi komputer.", template: "Buat rubrik penilaian K3LH di Lab TKJ. Indikator mencakup: Kerapian Manajemen Kabel (Cable Management), Penggunaan Grounding/Listrik Aman, Kebersihan Area Kerja, dan Penanganan Alat Sensitif." },
+                    { id: 48, name: "Rubrik Penilaian Laporan Praktikum TKJ", desc: "Format skoring sistematika laporan cetak/digital.", template: "Buatkan rubrik penilaian Laporan Hasil Praktikum TKJ. Aspek: Kelengkapan Tangkapan Layar (Screenshot), Kejelasan Langkah Kerja, Analisis Kesimpulan, dan Kerapian Format Dokumentasi." },
+                    { id: 49, name: "Rubrik Portofolio Hasil Karya Jaringan", desc: "Penilaian kumpulan dokumentasi proyek siswa.", template: "Susun rubrik evaluasi Portofolio Pembelajaran TKJ siswa selama 1 semester. Dinilai dari: Kelengkapan Dokumen, Aksesibilitas File, Progres Perbaikan, dan Kreativitas Solusi." },
+                    { id: 50, name: "Konversi Nilai Praktik ke Nilai Rapor", desc: "Formula dan panduan pengolahan skor mentah ke rapor.", template: "Buatkan panduan dan rumus konversi penilaian gabungan antara Tes Tulis (30%), Ujian Praktik/Performance (50%), dan Laporan/Portofolio (20%) menjadi nilai akhir rapor K-Merdeka." }
+                ]
+            },
+            {
+                id: "modul-06",
+                freeTag: "FREE #06",
+                title: "AI Media PPT (Slide Presentasi)",
+                icon: "fa-solid fa-file-powerpoint",
+                description: "Outline slide, script presentasi, visualisasi konsep, dan slide kuis.",
+                prompts: [
+                    { id: 51, name: "Outline Slide Presentasi Interaktif", desc: "Struktur 10 slide materi presentasi yang runtut.", template: "Buatkan outline 10 slide PowerPoint interaktif untuk materi [Materi, misal: Konsep & Cara Kerja Network Address Translation (NAT)]. Berikan judul tiap slide, poin-poin utama, dan visual yang disarankan." },
+                    { id: 52, name: "Script Narasi Presentasi Guru", desc: "Teks ucapan guru saat mengajar menggunakan PPT.", template: "Tuliskan script ucapan/narasi guru untuk mengajar menggunakan slide dengan topik [Topik, misal: Pengenalan Topologi Mesh & Star]. Sertakan instruksi kapan harus menunjuk gambar atau bertanya ke siswa." },
+                    { id: 53, name: "Slide Interaktif Pertanyaan Kelas", desc: "Slide selingan untuk mencairkan suasana mengantuk.", template: "Rancang 3 slide pertanyaan pilihan ganda interaktif / tebak-tebakan teknis untuk disisipkan di tengah presentasi tentang [Topik, misal: Keamanan Wi-Fi] guna mengecek pemahaman siswa." },
+                    { id: 54, name: "Rekomendasi Visualisasi Konsep Jaringan", desc: "Ide diagram, skema, dan ikon yang perlu ada di slide.", template: "Berikan deskripsi detail tata letak (layout) dan diagram visual yang harus digambar pada slide PPT untuk menjelaskan perbedaan antara [Konsep 1: Switch Layer 2] dan [Konsep 2: Switch Layer 3]." },
+                    { id: 55, name: "Slide Kuis Cepat Perintah CLI", desc: "Slide kuis singkat untuk diawal atau diakhir jam mengajar.", template: "Buat konten untuk 3 slide Kuis Cepat (Game Show style) tentang perintah-perintah dasar Linux. Sertakan Kunci Jawaban yang muncul pada klik berikutnya." },
+                    { id: 56, name: "Ringkasan Poin Kunci Pembelajaran", desc: "Slide penutup berisi 5 poin penting wajib ingat.", template: "Rangkum materi [Materi, misal: Sistem Pengalamatan IPv6] menjadi 1 slide ringkasan akhir (Takeaway Slide) berisi max 5 poin penting yang wajib dihafalkan siswa." },
+                    { id: 57, name: "Slide Pembuka Apersepsi Memikat", desc: "Slide awal untuk menarik perhatian siswa.", template: "Buat konsep slide pembuka (Slide 1-2) yang memikat untuk materi [Topik, misal: Bahaya Ransomware & Cyber Security]. Sertakan fakta mengejutkan atau gambar pemicu rasa penasaran." },
+                    { id: 58, name: "Slide Kesimpulan & Penugasan", desc: "Slide instruksi tugas mandiri / kelompok.", template: "Rancang slide penutup yang berisi ringkasan singkat, instruksi tugas rumah, link referensi belajar mandiri, dan kata-kata motivasi untuk calon IT Engineer." },
+                    { id: 59, name: "Desain Slide Studi Kasus Troubleshooting", desc: "Slide menyajikan masalah nyata untuk didiskusikan.", template: "Buat konten slide bertema 'Misteri Jaringan Putus': Sajikan skenario masalah [Masalah, misal: IP Conflict di Ruang Guru] lengkap dengan diagram peta jaringan sederhana untuk dipecahkan bersama." },
+                    { id: 60, name: "Slide Prosedur Jobsheet Praktikum", desc: "Slide tahapan alur praktik agar siswa tidak bingung.", template: "Susun konten slide PowerPoint yang menjelaskan alur alokasi waktu 4 jam pelajaran praktikum [Praktikum, misal: Setting Server DNS & Mail] dari penjelasan guru hingga pembersihan lab." }
+                ]
+            },
+            {
+                id: "modul-07",
+                freeTag: "FREE #07",
+                title: "AI Video Pembelajaran (Tutorial)",
+                icon: "fa-solid fa-video",
+                description: "Naskah video tutorial, konsep animasi, storyboard, dan script screencast.",
+                prompts: [
+                    { id: 61, name: "Naskah Video Tutorial Praktikum", desc: "Script video rekaman layar (Screencast Winbox/Packet Tracer).", template: "Buatkan naskah/script video tutorial durasi 5 menit untuk topik [Judul Tutorial, misal: Cara Setting VLAN di Cisco Packet Tracer]. Tuliskan dalam format 2 kolom: Visual (Tampilan Layar) dan Audio (Suara Narator)." },
+                    { id: 62, name: "Konsep Animasi Explainer Jaringan", desc: "Ide animasi explainer video konsep abstrak jaringan.", template: "Rancang konsep video animasi explainer durasi 3 menit yang menjelaskan [Konsep, misal: Cara Kerja DNS Server Mencari IP dari Domain Name]. Jelaskan karakter animasi dan alur cerita peran tiap server." },
+                    { id: 63, name: "Narasi Penjelasan Suara (Voiceover)", desc: "Teks narasi jelas dan ramah untuk di-dubbing.", template: "Tuliskan teks narasi voiceover yang santai namun edukatif untuk video pengenalan [Topik, misal: Mengenal Perangkat Utama Dalam Rak Server Data Center]. Durasi pembacaan sekitar 2 menit." },
+                    { id: 64, name: "Hook Pembuka Video Edukasi IT", desc: "Kalimat 15 detik pertama agar penonton betah nonton.", template: "Buatkan 3 pilihan kalimat Hook Pembuka (15 detik pertama) untuk video YouTube/TikTok Edukasi TKJ dengan judul [Judul, misal: Rahasia Internet Rumah Kamu Bisa Cepat dan Stabil!]." },
+                    { id: 65, name: "Storyboard Sederhana K3LH", desc: "Urutan adegan gambar dan transisi video.", template: "Buatkan deskripsi Storyboard 6 adegan (Scene 1 - Scene 6) untuk video panduan K3LH [Topik, misal: Cara Menggunakan Tang Crimp dan Tester yang Benar]." },
+                    { id: 66, name: "Script Screencast Install Linux Server", desc: "Panduan rekaman layar instalasi sistem operasi.", template: "Buat skrip narasi rekaman layar saat menuntun siswa melakukan instalasi [OS, misal: Debian 12 Server Tanpa GUI]. Tunjukkan titik-titik di mana guru harus memberikan peringatan penting." },
+                    { id: 67, name: "Format Video Q&A Mitos vs Fakta IT", desc: "Video meluruskan pemahaman salah di masyarakat.", template: "Buatkan skenario video Q&A yang membahas 3 Mitos vs Fakta Seputar Dunia Komputer & Jaringan (misal: 'Semakin Banyak Antena Wi-Fi Semakin Cepat Internet?')." },
+                    { id: 68, name: "Rangkuman Video Pendek (Shorts/Reels)", desc: "Script cepat durasi < 60 detik untuk media sosial.", template: "Tulis skrip video vertikal (Shorts/Reels) durasi 45 detik tentang tips cepat: [Tips, misal: 3 Perintah Command Prompt Paling Berguna Untuk Cek Jaringan]." },
+                    { id: 69, name: "Deskripsi, Judul & SEO Video YouTube", desc: "Optimasi SEO agar video pembelajaran mudah ditemukan.", template: "Buatkan 3 pilihan judul menarik, deskripsi lengkap beserta timestamps, dan 15 kata kunci (tags) untuk video tutorial pembelajaran YouTube berjudul [Judul Video Praktik TKJ]." },
+                    { id: 70, name: "Ide Seri Video Pembelajaran Berantai", desc: "Rancangan kurikulum playlist video pembelajaran.", template: "Rancang kurikulum playlist 5 seri video pendek pembelajaran mandiri untuk modul [Modul, misal: Dasar-dasar Mikrotik RouterOS untuk Pemula]." }
+                ]
+            },
+            {
+                id: "modul-08",
+                freeTag: "FREE #08",
+                title: "AI Aktivitas Pembelajaran (Game/Roleplay)",
+                icon: "fa-solid fa-gamepad",
+                description: "Ice breaking teknis, simulasi peran, game edukasi, dan challenge kelas.",
+                prompts: [
+                    { id: 71, name: "Ice Breaking Teknis Komputer", desc: "Permainan singkat pemanasan otak bertema IT.", template: "Rancang 1 aktivitas Ice Breaking durasi 5-10 menit bertema IT/Komputer (misal: 'Tebak Perintah CLI' atau 'Sambung Kata Protokol') yang seru dilakukan sebelum jam praktikum dimulai." },
+                    { id: 72, name: "Simulasi Peran / Roleplay IT Support", desc: "Siswa berperan sebagai Client dan Helpdesk.", template: "Rancang skenario aktivitas Roleplay (Simulasi Peran) di mana 1 siswa menjadi Teknisi IT Helpdesk dan 1 siswa menjadi User Awam yang emosional karena [Masalah Jaringan]. Tentukan panduan penilaiannya." },
+                    { id: 73, name: "Game Edukasi 'Packet Tracer Manusia'", desc: "Game fisik memperagakan alur data dalam jaringan.", template: "Buatkan aturan permainan edukasi tanpa komputer berjudul 'Packet Tracer Manusia' di mana siswa berperan sebagai Router, Switch, Packet, dan IP Address untuk mensimulasikan pengiriman data LAN." },
+                    { id: 74, name: "Diskusi Kelompok Model Jigsaw TKJ", desc: "Sistem belajar kelompok ahli membedah topik.", template: "Rancang panduan diskusi model Jigsaw untuk materi [Topik, misal: Jenis-jenis Keamanan Nirkabel - WEP, WPA, WPA2, WPA3]. Bagi tugas untuk 4 Tim Ahli." },
+                    { id: 75, name: "Challenge 15 Menit Troubleshooting", desc: "Tantangan berpacu dengan waktu membetulkan eror.", template: "Buat aturan dan skenario tantangan kilat 'Speed Troubleshooting 15 Menit': Guru merusak 1 opsi konfigurasi pada router, tim siswa berlomba menemukannya." },
+                    { id: 76, name: "Kompetisi Speed-Crimp Kabel UTP", desc: "Lomba merakit kabel UTP tercepat dan teruji.", template: "Buat panduan dan aturan main lomba internal kelas 'King of Crimping': Menilai kecepatan, kerapihan susunan kabel, dan keberhasilan uji kelayakan kabel LAN." },
+                    { id: 77, name: "Aktivitas Peer-Teaching (Siswa Mengajar)", desc: "Siswa ahli membantu teman sekelas yang belum paham.", template: "Buat mekanisme aktivitas Peer-Teaching di lab komputer di mana siswa yang selesai praktikum lebih cepat ditugaskan menjadi 'Asisten Laboratorium' untuk mendampingi temannya." },
+                    { id: 78, name: "Pemetaan Konsep (Mind Mapping Jaringan)", desc: "Tugas kreatif membuat visualisasi peta konsep IT.", template: "Buat panduan tugas membuat Mind Map (Peta Konsep) kreatif berbasis kertas/digital untuk merangkum seluruh ekosistem [Topik, misal: Infrastruktur Layanan Internet/ISP]." },
+                    { id: 79, name: "Eksperimen Mandiri Simulation Software", desc: "Panduan eksplorasi mandiri menggunakan Cisco Packet Tracer.", template: "Buat instruksi lembar eksplorasi mandiri siswa menggunakan Cisco Packet Tracer: Minta siswa mencoba menghubungkan PC dan Server lalu mengamati lalu lintas paket di mode Simulation." },
+                    { id: 80, name: "Debat Isu Teknologi & Etika Keamanan", desc: "Debat terstruktur isu etika hacker & privasi data.", template: "Susun skenario dan aturan debat kelas dengan mosi: 'Apakah Perusahaan Boleh Memantau Seluruh Aktivitas Internet Karyawannya di Jaringan Kantor?' Bagi kelas jadi Tim Pro dan Kontra." }
+                ]
+            },
+            {
+                id: "modul-09",
+                freeTag: "FREE #09",
+                title: "AI Proyek & Teaching Factory (TEFA)",
+                icon: "fa-solid fa-briefcase",
+                description: "Proyek PBL, simulasi Teaching Factory (Tefa), brief klien, dan SOP proyek.",
+                prompts: [
+                    { id: 81, name: "Rancangan Proyek PBL (Project-Based Learning)", desc: "Perancangan proyek riil membangun jaringan mini cafe/office.", template: "Buat rancangan modul Project-Based Learning (PBL) durasi 3 minggu dengan tema: [Tema Proyek, misal: Perancangan Jaringan Wi-Fi & Billing Hotspot untuk Kafe 2 Lantai]. Cantumkan milestone mingguan." },
+                    { id: 82, name: "Simulasi Teaching Factory Jasa IT", desc: "Mekanisme unit usaha sekolah bidang perawatan PC/Jaringan.", template: "Rancang model operasional Teaching Factory (Tefa) Jurusan TKJ untuk unit layanan [Jenis Layanan, misal: Jasa Servis Komputer & Instalasi Wi-Fi Rumah/Sekolah]. Sertakan alur pelayanan konsumen." },
+                    { id: 83, name: "Katalog Produk Layanan Jasa Komputer", desc: "Membuat katalog produk layanan teknis karya siswa.", template: "Buatkan draf Katalog Layanan Jasa dan Price List terjangkau yang dapat ditawarkan Teaching Factory TKJ kepada warga sekolah/masyarakat sekitar." },
+                    { id: 84, name: "Brief Klien / Pelanggan (Client Requirement)", desc: "Dokumen kebutuhan klien simulasi untuk dianalisis siswa.", template: "Tuliskan lembar 'Client Requirement Brief' simulasi dari seorang pemilik toko retail yang membutuhkan sistem Kasir terhubung LAN dan Wi-Fi Pengunjung. Minta siswa membuat proposal teknisnya." },
+                    { id: 85, name: "SOP Kerja Proyek & Keselamatan Kerja", desc: "Standard Operating Procedure dalam pengerjaan proyek IT.", template: "Susun Standard Operating Procedure (SOP) pengerjaan proyek perakitan dan penataan kabel dalam rak server (Rack Cabinet Wiring) untuk tim siswa Tefa TKJ." },
+                    { id: 86, name: "Time Schedule / Gantt Chart Proyek", desc: "Jadwal pengerjaan proyek dari perancangan hingga testing.", template: "Buatkan tabel estimasi waktu (Gantt Chart sederhana) pengerjaan proyek jaringan skala kecil selama 4 minggu mulai dari Survey, Design, Purchasing, Installation, Testing, hingga Handover." },
+                    { id: 87, name: "Pembagian Peran Tim Kerja Proyek", desc: "Deskripsi tugas Project Manager, Network Engineer, Cabling Tech.", template: "Buat deskripsi tugas (Job Description) pembagian peran tim proyek siswa yang terdiri dari: Project Manager, Network Engineer, System Administrator, dan Field Cabling Technician." },
+                    { id: 88, name: "Rubrik Penilaian Kinerja Proyek Tefa", desc: "Penilaian aspek profesionalisme dan kepuasan pelanggan.", template: "Buatkan rubrik penilaian proyek Teaching Factory yang mencakup aspek: Ketepatan Waktu (Deadline), Kerapihan Hasil Pekerjaan, Kesesuaian Budget, dan Sikap Pelayanan Klien." },
+                    { id: 89, name: "Formulir Evaluasi Kepuasan Pelanggan", desc: "Kuisioner umpan balik dari pengguna jasa Tefa TKJ.", template: "Buat lembar kuesioner singkat evaluasi kepuasan pelanggan (Customer Satisfaction Survey) untuk layanan servis komputer/jaringan yang dikerjakan siswa." },
+                    { id: 90, name: "Portofolio Proyek Siswa (Case Study)", desc: "Template laporan akhir proyek bernilai jual.", template: "Buatkan template Laporan Portofolio Proyek Akhir Siswa berformat Case Study profesional yang siap dipajang di LinkedIn atau ditunjukkan saat melamar kerja." }
+                ]
+            },
+            {
+                id: "modul-10",
+                freeTag: "FREE #10",
+                title: "AI Administrasi Guru (Modul Ajar/RPP)",
+                icon: "fa-solid fa-folder-open",
+                description: "Modul ajar, analisis CP/ATP, prota/promes, jurnal harian, dan SOP lab.",
+                prompts: [
+                    { id: 91, name: "Modul Ajar / RPP Kurikulum Merdeka", desc: "Penyusun Modul Ajar lengkap sesuai format standar Kemdikbud.", template: "Bertindaklah sebagai Ahli Kurikulum Merdeka SMK. Buatkan Draf Modul Ajar lengkap untuk Mata Pelajaran Konsentrasi Keahlian TKJ/TJKT. Elemen: [Elemen, misal: Perancangan dan Pengalamatan Jaringan], Alokasi Waktu: [Misal: 18 JP x 45 Menit], Kelas: XI. Format harus memuat: Informasi Umum, Target Peserta Didik, Profil Pelajar Pancasila, Model Pembelajaran (PBL/PJBL), Tujuan Pembelajaran, Pemahaman Bermakna, Pertanyaan Pemantik, Kegiatan Pembelajaran (Pendahuluan, Inti, Penutup), dan Asesmen (Diagnostik, Formatif, Sumatif)." },
+                    { id: 92, name: "Analisis Capaian Pembelajaran (CP) ke ATP", desc: "Membedah CP menjadi Tujuan Pembelajaran (TP) & Alur ATP.", template: "Bantu saya menganalisis Capaian Pembelajaran (CP) Kurikulum Merdeka TJKT berikut: '[Kutip kalimat CP TKJ]'. Pecah menjadi beberapa Tujuan Pembelajaran (TP) yang terukur dan susun menjadi Alur Tujuan Pembelajaran (ATP) yang logis untuk Kelas X/XI/XII." },
+                    { id: 93, name: "Program Tahunan & Program Semester", desc: "Pemetaan alokasi waktu JP efektif selama 1 tahun ajaran.", template: "Buatkan draf pemetaan Program Semester (Promes) untuk mata pelajaran Produktif TKJ kelas XI dengan total [Jumlah] Minggu Efektif. Distribusikan JP untuk materi [Sebutkan 4-5 Topik Utama], Minggu Asesmen, dan Cadangan." },
+                    { id: 94, name: "Jurnal Harian & Catatan Mengajar Guru", desc: "Format ringkas rekam jejak kegiatan belajar harian.", template: "Buatkan template Jurnal Harian Mengajar Guru TKJ berbentuk tabel yang mencakup: Hari/Tanggal, Jam Ke-, Kelas, TP/Materi Yang Dibahas, Jumlah Siswa Hadir/Absen, Hambatan Pembelajaran, dan Solusi/Tindak Lanjut." },
+                    { id: 95, name: "Pemetaan & Inventarisir Perangkat Lab", desc: "Format pencatatan aset PC, Switch, Mikrotik, dan Kabel.", template: "Buat format tabel Pendataan Aset & Inventaris Lab Komputer TKJ yang mencakup: Kode Perangkat, Nama Perangkat, Spesifikasi/Merk, Jumlah, Kondisi (Baik/Rusak Ringan/Rusak Berat), Tanggal Pengadaan, dan Lokasi Rak." },
+                    { id: 96, name: "Draft Pesan Komunikasi Orang Tua Siswa", desc: "Pesan sopan dan informatif ke orang tua terkait kendala/prestasi.", template: "Tuliskan 2 draf pesan WhatsApp yang sopan dan profesional dari Guru/Wali Kelas TKJ kepada Orang Tua Siswa: 1) Pesan mengabarkan siswa sering tidak mengikuti praktikum lab, 2) Pesan mengapresiasi keaktifan dan nilai praktikum siswa yang sangat baik." },
+                    { id: 97, name: "Surat Pemberitahuan Kegiatan Praktik / KKL", desc: "Draf surat resmi sekolah untuk izin praktikum luar / KKL.", template: "Buatkan draf Surat Pemberitahuan Resmi Sekolah kepada Orang Tua/Wali Murid mengenai kegiatan [Nama Kegiatan, misal: Kunjungan Industri / Praktik Lapangan Pemetaan Fiber Optik]. Cantumkan waktu, lokasi, biaya (jika ada), dan permohonan izin." },
+                    { id: 98, name: "Laporan Hasil Belajar & Catatan Rapor", desc: "Kalimat narasi deskripsi perkembangan karakter & akademik.", template: "Tuliskan 5 contoh kalimat narasi deskripsi Rapor K-Merdeka (Catatan Wali Kelas) untuk siswa SMK TKJ yang memiliki karakter: 1) Sangat terampil praktik tapi teori kurang, 2) Tekun dan rajin, 3) Perlu peningkatan kedisiplinan hadir." },
+                    { id: 99, name: "Standard Operating Procedure (SOP) Lab TKJ", desc: "Aturan tata tertib masuk, menggunakan, dan keluar lab.", template: "Buat draf Teks Banner Tata Tertib & SOP Penggunaan Laboratorium Komputer & Jaringan SMK TKJ. Mencakup aturan sebelum masuk, saat praktikum, larangan makan/minum, dan prosedur mematikan alat (shutdown)." },
+                    { id: 100, name: "Usulan Anggaran & Kebutuhan Sarpras Lab", desc: "Proposal permohonan pengadaan peralatan praktikum baru.", template: "Buatkan draf Surat Usulan Pengadaan Alat & Bahan Praktikum (Sarpras) untuk Lab TKJ ke Kepala Sekolah. Alasan pengusulan: Pembaruan perangkat tua untuk mendukung kurikulum industri. Cantumkan rincian alat prioritas (Router, Switch Managed, Fiber Splicer, Crimping Tool, Tester) beserta estimasi manfaatnya." }
+                ]
+            }
+        ];
+const state={module:"all",search:"",open:new Set()};
+const $=id=>document.getElementById(id);
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function visibleModules(){const q=state.search.trim().toLowerCase();return toolkitData.map(m=>({...m,prompts:m.prompts.filter(p=>!q||[m.title,m.description,m.freeTag,p.name,p.desc,p.template].join(" ").toLowerCase().includes(q))})).filter(m=>(state.module==="all"||m.id===state.module)&&m.prompts.length)}
+function populateSelect(){$("moduleSelect").innerHTML='<option value="all">Semua Modul (100 Prompt)</option>'+toolkitData.map(m=>`<option value="${esc(m.id)}">${esc(m.freeTag)} — ${esc(m.title)}</option>`).join("")}
+function render(){const list=visibleModules();let total=0,html="";list.forEach(m=>{total+=m.prompts.length;const open=state.open.has(m.id);html+=`<article class="module ${open?"open":""}" id="${esc(m.id)}"><button class="module-head" type="button" data-toggle="${esc(m.id)}" aria-expanded="${open}"><div class="module-icon">${esc(m.freeTag.replace("FREE #",""))}</div><div class="module-info"><div class="tag">${esc(m.freeTag)}</div><div class="module-title">${esc(m.title)}</div><div class="module-desc">${esc(m.description)}</div></div><div class="chevron">⌄</div></button><div class="module-body"><div class="prompts">${m.prompts.map(p=>`<div class="prompt"><div class="prompt-top"><span class="num">#${String(p.id).padStart(2,"0")}</span><span class="ptype">Prompt AI</span></div><h3>${esc(p.name)}</h3><p class="desc">${esc(p.desc)}</p><div class="prompt-text" id="prompt-${p.id}">${esc(p.template)}</div><button class="copy" type="button" data-copy="${p.id}">▣ Salin Prompt</button></div>`).join("")}</div></div></article>`});$("modules").innerHTML=html||`<div class="empty"><b>Prompt tidak ditemukan.</b><br><br>Coba kata kunci lain atau tekan Reset.</div>`;$("count").textContent=`${total} Prompt`}
+function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(window.__toast);window.__toast=setTimeout(()=>t.classList.remove("show"),2200)}
+async function copyPrompt(id){const el=$("prompt-"+id);if(!el)return;const text=el.textContent.trim();try{if(navigator.clipboard&&window.isSecureContext)await navigator.clipboard.writeText(text);else{const ta=document.createElement("textarea");ta.value=text;ta.readOnly=true;ta.style.position="fixed";ta.style.left="-9999px";document.body.appendChild(ta);ta.focus();ta.select();if(!document.execCommand("copy"))throw Error("copy");ta.remove()}toast("✓ Prompt berhasil disalin")}catch(e){const range=document.createRange();range.selectNodeContents(el);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);toast("Teks dipilih — gunakan Salin/Copy")}}
+$("modules").addEventListener("click",e=>{const t=e.target.closest("[data-toggle]");if(t){const id=t.dataset.toggle;state.open.has(id)?state.open.delete(id):state.open.add(id);render();return}const c=e.target.closest("[data-copy]");if(c)copyPrompt(c.dataset.copy)});
+$("moduleSelect").addEventListener("change",e=>{state.module=e.target.value;render()});
+$("search").addEventListener("input",e=>{state.search=e.target.value;render()});
+$("openAll").addEventListener("click",()=>{visibleModules().forEach(m=>state.open.add(m.id));render()});
+$("closeAll").addEventListener("click",()=>{state.open.clear();render()});
+$("reset").addEventListener("click",()=>{state.module="all";state.search="";state.open.clear();$("moduleSelect").value="all";$("search").value="";render()});
+populateSelect();render();
+</script>
