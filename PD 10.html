@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PD #10 - ADM Guru SMK TKJ</title>
+<style>
+:root{--primary:#1769aa;--bg:#f4f7fb;--card:#fff;--text:#1f2937;--muted:#64748b;--border:#dbe3ee}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+header{background:linear-gradient(135deg,#1769aa,#0d47a1);color:#fff;padding:28px 18px;text-align:center}
+header h1{margin:0 0 6px;font-size:25px} header p{margin:0;opacity:.92}
+.container{max-width:1050px;margin:auto;padding:18px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 3px 12px rgba(15,23,42,.05)}
+h2{font-size:19px;margin:0 0 14px;color:#0d47a1}
+h3{font-size:16px;margin:18px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+label{font-weight:700;font-size:13px}
+input,textarea,select{width:100%;padding:10px 11px;border:1px solid var(--border);border-radius:9px;margin-top:5px;font:inherit;background:#fff}
+textarea{min-height:90px;resize:vertical}
+.checkgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.check{display:flex;align-items:flex-start;gap:8px;padding:9px;border:1px solid var(--border);border-radius:9px;background:#fafcff;font-weight:400}
+.check input{width:auto;margin-top:4px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+button{border:0;border-radius:9px;padding:11px 16px;font-weight:700;cursor:pointer}
+.primary{background:var(--primary);color:#fff}.secondary{background:#e8eef6;color:#17324d}.danger{background:#fee2e2;color:#991b1b}
+#output{white-space:pre-wrap;background:#0f172a;color:#e5e7eb;border-radius:10px;padding:16px;min-height:160px;font-size:13px}
+.small{font-size:12px;color:var(--muted)}
+.badge{display:inline-block;padding:4px 9px;border-radius:999px;background:#e8f1fb;color:#0d47a1;font-size:12px;font-weight:700}
+@media(max-width:700px){.grid,.checkgrid{grid-template-columns:1fr}.container{padding:12px}header h1{font-size:21px}}
+</style>
+</head>
+<body>
+<header>
+  <h1>PD #10 — ADM Guru SMK–TKJ</h1>
+  <p>AI Administrasi Guru SMK • COPY → ISI DATA → PILIH ADM → GENERATE → REVISI</p>
+</header>
+
+<main class="container">
+  <section class="card">
+    <span class="badge">Cara Pakai</span>
+    <h2>1. Isi Data Guru</h2>
+    <div class="grid">
+      <div><label>Nama Guru</label><input id="guru" placeholder="Nama guru"></div>
+      <div><label>NIP/NUPTK</label><input id="nip" placeholder="Opsional"></div>
+      <div><label>Nama Sekolah</label><input id="sekolah" placeholder="Nama sekolah"></div>
+      <div><label>Tahun Pelajaran</label><input id="tahun" placeholder="Contoh: 2026/2027"></div>
+      <div><label>Konsentrasi Keahlian</label><input id="jurusan" value="Teknik Komputer dan Jaringan (TKJ)"></div>
+      <div><label>Mata Pelajaran</label><input id="mapel" placeholder="Mata pelajaran / elemen"></div>
+      <div><label>Kelas</label><input id="kelas" placeholder="Contoh: X"></div>
+      <div><label>Fase</label><input id="fase" placeholder="Contoh: E"></div>
+      <div><label>Semester</label>
+        <select id="semester"><option value="">Pilih</option><option>Semester 1</option><option>Semester 2</option></select>
+      </div>
+      <div><label>Alokasi Waktu</label><input id="alokasi" placeholder="Contoh: 6 JP/minggu"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2. Data Pembelajaran</h2>
+    <div class="grid">
+      <div><label>CP</label><textarea id="cp" placeholder="Tempel CP jika tersedia"></textarea></div>
+      <div><label>TP</label><textarea id="tp" placeholder="Tempel TP jika tersedia"></textarea></div>
+      <div><label>ATP</label><textarea id="atp" placeholder="Tempel ATP jika tersedia"></textarea></div>
+      <div><label>Materi</label><textarea id="materi" placeholder="Materi pembelajaran"></textarea></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>3. Pilih Administrasi</h2>
+    <div class="checkgrid" id="checks">
+      <label class="check"><input type="checkbox" value="Program Tahunan / Prota"> Program Tahunan / Prota</label>
+      <label class="check"><input type="checkbox" value="Program Semester / Prosem"> Program Semester / Prosem</label>
+      <label class="check"><input type="checkbox" value="Minggu Efektif"> Minggu Efektif</label>
+      <label class="check"><input type="checkbox" value="Jadwal Pembelajaran"> Jadwal Pembelajaran</label>
+      <label class="check"><input type="checkbox" value="Daftar Peserta Didik"> Daftar Peserta Didik</label>
+      <label class="check"><input type="checkbox" value="Daftar Hadir"> Daftar Hadir</label>
+      <label class="check"><input type="checkbox" value="Jurnal Mengajar"> Jurnal Mengajar</label>
+      <label class="check"><input type="checkbox" value="Jurnal Pembelajaran"> Jurnal Pembelajaran</label>
+      <label class="check"><input type="checkbox" value="Catatan Perkembangan Siswa"> Catatan Perkembangan Siswa</label>
+      <label class="check"><input type="checkbox" value="Rencana Asesmen"> Rencana Asesmen</label>
+      <label class="check"><input type="checkbox" value="Kisi-kisi Asesmen"> Kisi-kisi Asesmen</label>
+      <label class="check"><input type="checkbox" value="Rekap Nilai"> Rekap Nilai</label>
+      <label class="check"><input type="checkbox" value="Analisis Hasil Asesmen"> Analisis Hasil Asesmen</label>
+      <label class="check"><input type="checkbox" value="Program Remedial"> Program Remedial</label>
+      <label class="check"><input type="checkbox" value="Program Pengayaan"> Program Pengayaan</label>
+      <label class="check"><input type="checkbox" value="Administrasi Praktik TKJ"> Administrasi Praktik TKJ</label>
+      <label class="check"><input type="checkbox" value="Administrasi Alat dan Bahan"> Administrasi Alat dan Bahan</label>
+      <label class="check"><input type="checkbox" value="Administrasi K3"> Administrasi K3</label>
+      <label class="check"><input type="checkbox" value="Administrasi Proyek/TEFA"> Administrasi Proyek/TEFA</label>
+      <label class="check"><input type="checkbox" value="Dokumentasi Pembelajaran"> Dokumentasi Pembelajaran</label>
+      <label class="check"><input type="checkbox" value="Laporan Pembelajaran"> Laporan Pembelajaran</label>
+      <label class="check"><input type="checkbox" value="Checklist ADM Guru"> Checklist ADM Guru</label>
+      <label class="check"><input type="checkbox" value="SEMUA ADM YANG RELEVAN"><b>SEMUA ADM YANG RELEVAN</b></label>
+    </div>
+    <div class="actions">
+      <button class="primary" onclick="generatePrompt()">Generate Prompt</button>
+      <button class="secondary" onclick="selectAll()">Pilih Semua</button>
+      <button class="secondary" onclick="clearChecks()">Kosongkan Pilihan</button>
+      <button class="danger" onclick="resetForm()">Reset</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>4. Prompt Siap Copy</h2>
+    <p class="small">Prompt di bawah otomatis dibuat dari data yang Anda isi dan pilihan ADM.</p>
+    <div id="output">Klik “Generate Prompt” untuk membuat prompt.</div>
+    <div class="actions">
+      <button class="primary" onclick="copyPrompt()">Salin Prompt</button>
+      <button class="secondary" onclick="downloadTxt()">Simpan TXT</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>5. Contoh Perintah Revisi</h2>
+    <p>Setelah AI menghasilkan ADM, gunakan perintah sederhana:</p>
+    <ul>
+      <li>“Revisi bagian tersebut.”</li>
+      <li>“Perbaiki bagian Prota.”</li>
+      <li>“Tambahkan kolom.”</li>
+      <li>“Buat versi siap cetak.”</li>
+      <li>“Buat untuk kelas XI.”</li>
+      <li>“Buat semester 2.”</li>
+      <li>“Gunakan data sebelumnya.”</li>
+    </ul>
+  </section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+function vals(){
+  return {
+    guru:$('guru').value||'[DATA BELUM DIISI]',
+    nip:$('nip').value||'[DATA BELUM DIISI]',
+    sekolah:$('sekolah').value||'[DATA BELUM DIISI]',
+    tahun:$('tahun').value||'[DATA BELUM DIISI]',
+    jurusan:$('jurusan').value||'[DATA BELUM DIISI]',
+    mapel:$('mapel').value||'[DATA BELUM DIISI]',
+    kelas:$('kelas').value||'[DATA BELUM DIISI]',
+    fase:$('fase').value||'[DATA BELUM DIISI]',
+    semester:$('semester').value||'[DATA BELUM DIISI]',
+    alokasi:$('alokasi').value||'[DATA BELUM DIISI]',
+    cp:$('cp').value||'[DATA BELUM DIISI]',
+    tp:$('tp').value||'[DATA BELUM DIISI]',
+    atp:$('atp').value||'[DATA BELUM DIISI]',
+    materi:$('materi').value||'[DATA BELUM DIISI]'
+  };
+}
+function selected(){
+  return [...document.querySelectorAll('#checks input:checked')].map(x=>x.value);
+}
+function generatePrompt(){
+  let v=vals(), s=selected();
+  if(!s.length){alert('Pilih minimal satu jenis administrasi.');return;}
+  if(s.includes('SEMUA ADM YANG RELEVAN')) s=['SEMUA ADM YANG RELEVAN'];
+  const prompt=`PERAN
+Bertindak sebagai Asisten Administrasi Guru SMK yang membantu guru menyusun administrasi pembelajaran secara rapi, sistematis, praktis, dan mudah diedit.
+
+Jangan mengarang data sekolah, guru, siswa, nilai, jadwal, tanggal, atau informasi yang belum diberikan. Jika data diperlukan tetapi belum tersedia, gunakan [DATA BELUM DIISI].
+
+DATA GURU
+Nama Guru: ${v.guru}
+NIP/NUPTK: ${v.nip}
+Nama Sekolah: ${v.sekolah}
+Tahun Pelajaran: ${v.tahun}
+Konsentrasi Keahlian: ${v.jurusan}
+Mata Pelajaran: ${v.mapel}
+Kelas: ${v.kelas}
+Fase: ${v.fase}
+Semester: ${v.semester}
+Alokasi Waktu: ${v.alokasi}
+
+DATA PEMBELAJARAN
+CP: ${v.cp}
+TP: ${v.tp}
+ATP: ${v.atp}
+Materi: ${v.materi}
+
+ADMINISTRASI YANG DIMINTA
+${s.map((x,i)=>`${i+1}. ${x}`).join('\\n')}
+
+ATURAN
+- Buat hanya administrasi yang dipilih.
+- Jika memilih SEMUA ADM YANG RELEVAN, buat seluruh administrasi yang sesuai dengan data.
+- Jangan membuat data fiktif sebagai data nyata.
+- Gunakan bahasa Indonesia profesional dan mudah dipahami guru.
+- Gunakan tabel jika lebih efektif.
+- Buat format mudah disalin ke Word dan diedit.
+- Sesuaikan dengan kelas, fase, semester, CP, TP, ATP, materi, dan alokasi waktu yang diberikan.
+- Jika kalender pendidikan atau data lain belum tersedia, jangan mengarang; tandai bagian yang perlu diisi.
+- Jangan menentukan bobot nilai jika belum diberikan.
+- Untuk data siswa yang belum tersedia, gunakan placeholder seperti Siswa 01, Siswa 02.
+- Untuk administrasi praktik, sertakan alat, bahan, jurnal praktik, hasil, kendala, dan K3 bila relevan.
+- Untuk proyek/TEFA, sertakan perencanaan, pembagian tugas, monitoring, dan quality control bila relevan.
+
+PEMERIKSAAN AKHIR
+Sebelum memberikan hasil, periksa konsistensi identitas, kelas, semester, TP/ATP, alokasi waktu, dan data. Tampilkan bagian "DATA YANG MASIH DIPERLUKAN" jika ada.
+
+FORMAT HASIL
+Tampilkan:
+1. JUDUL DOKUMEN
+2. IDENTITAS
+3. ISI ADMINISTRASI
+4. DATA YANG MASIH DIPERLUKAN
+5. CHECKLIST KELENGKAPAN
+
+Pertahankan data yang sudah benar jika saya meminta revisi. Ubah hanya bagian yang saya minta.`;
+  $('output').textContent=prompt;
+}
+function selectAll(){document.querySelectorAll('#checks input').forEach(x=>x.checked=true)}
+function clearChecks(){document.querySelectorAll('#checks input').forEach(x=>x.checked=false)}
+function resetForm(){if(!confirm('Reset semua data dan pilihan?'))return; document.querySelectorAll('input,textarea').forEach(x=>{if(x.id==='jurusan')x.value='Teknik Komputer dan Jaringan (TKJ)';else x.value=''});$('semester').value='';clearChecks();$('output').textContent='Klik “Generate Prompt” untuk membuat prompt.'}
+async function copyPrompt(){
+  const text=$('output').textContent;
+  if(text.startsWith('Klik')){alert('Generate prompt terlebih dahulu.');return}
+  await navigator.clipboard.writeText(text); alert('Prompt berhasil disalin.');
+}
+function downloadTxt(){
+  const text=$('output').textContent;
+  if(text.startsWith('Klik')){alert('Generate prompt terlebih dahulu.');return}
+  const blob=new Blob([text],{type:'text/plain;charset=utf-8'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='PD-10-ADM-Guru-TKJ.txt';a.click();URL.revokeObjectURL(a.href);
+}
+</script>
+</body>
+</html>
